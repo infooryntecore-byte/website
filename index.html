@@ -1,0 +1,3459 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oryntecore - Digital Innovation Agency</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        
+
+        * {
+
+            font-family: 'Inter', sans-serif;
+
+        }
+
+        
+
+        @keyframes fadeInUp {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(60px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+        
+
+        @keyframes slideInLeft {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateX(-80px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateX(0);
+
+            }
+
+        }
+
+        
+
+        @keyframes slideInRight {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateX(80px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateX(0);
+
+            }
+
+        }
+
+        
+
+        @keyframes scaleIn {
+
+            from {
+
+                opacity: 0;
+
+                transform: scale(0.7);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: scale(1);
+
+            }
+
+        }
+
+        
+
+        @keyframes float {
+
+            0%, 100% {
+
+                transform: translateY(0px) rotate(0deg);
+
+            }
+
+            33% {
+
+                transform: translateY(-20px) rotate(2deg);
+
+            }
+
+            66% {
+
+                transform: translateY(-10px) rotate(-2deg);
+
+            }
+
+        }
+
+        
+
+        @keyframes pulse-glow {
+
+            0%, 100% {
+
+                box-shadow: 0 0 30px rgba(255, 193, 7, 0.4);
+
+            }
+
+            50% {
+
+                box-shadow: 0 0 60px rgba(255, 193, 7, 0.8);
+
+            }
+
+        }
+
+        
+
+        @keyframes typewriter {
+
+            from {
+
+                width: 0;
+
+            }
+
+            to {
+
+                width: 100%;
+
+            }
+
+        }
+
+        
+
+        @keyframes blink {
+
+            0%, 50% {
+
+                border-color: transparent;
+
+            }
+
+            51%, 100% {
+
+                border-color: #ffc107;
+
+            }
+
+        }
+
+        
+
+        @keyframes morphing {
+
+            0%, 100% {
+
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+
+            }
+
+            50% {
+
+                border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+
+            }
+
+        }
+
+        
+
+        @keyframes gradient-shift {
+
+            0%, 100% {
+
+                background-position: 0% 50%;
+
+            }
+
+            50% {
+
+                background-position: 100% 50%;
+
+            }
+
+        }
+
+        
+
+        @keyframes lightning {
+
+            0%, 100% {
+
+                transform: scale(1) rotate(0deg);
+
+                opacity: 1;
+
+            }
+
+            50% {
+
+                transform: scale(1.1) rotate(5deg);
+
+                opacity: 0.8;
+
+            }
+
+        }
+
+        
+
+        @keyframes bounce-in {
+
+            0% {
+
+                transform: scale(0.3) rotate(-10deg);
+
+                opacity: 0;
+
+            }
+
+            50% {
+
+                transform: scale(1.05) rotate(5deg);
+
+            }
+
+            70% {
+
+                transform: scale(0.9) rotate(-2deg);
+
+            }
+
+            100% {
+
+                transform: scale(1) rotate(0deg);
+
+                opacity: 1;
+
+            }
+
+        }
+
+        
+
+        @keyframes fadeOut {
+
+            from {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+            to {
+
+                opacity: 0;
+
+                transform: translateY(-20px);
+
+            }
+
+        }
+
+        
+
+        .animate-fadeInUp {
+
+            animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+
+        }
+
+        
+
+        .animate-slideInLeft {
+
+            animation: slideInLeft 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+
+        }
+
+        
+
+        .animate-slideInRight {
+
+            animation: slideInRight 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+
+        }
+
+        
+
+        .animate-scaleIn {
+
+            animation: scaleIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+
+        }
+
+        
+
+        .animate-float {
+
+            animation: float 8s ease-in-out infinite;
+
+        }
+
+        
+
+        .animate-pulse-glow {
+
+            animation: pulse-glow 4s ease-in-out infinite;
+
+        }
+
+        
+
+        .animate-morphing {
+
+            animation: morphing 10s ease-in-out infinite;
+
+        }
+
+        
+
+        .animate-gradient {
+
+            background-size: 400% 400%;
+
+            animation: gradient-shift 8s ease infinite;
+
+        }
+
+        
+
+        .animate-lightning {
+
+            animation: lightning 3s ease-in-out infinite;
+
+        }
+
+        
+
+        .animate-bounce-in {
+
+            animation: bounce-in 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+
+        }
+
+        
+
+        .gradient-bg {
+
+            background: linear-gradient(-45deg, #000000, #1a1a1a, #333333, #0f172a);
+
+        }
+
+        
+
+        .gradient-text {
+
+            background: linear-gradient(135deg, #ffc107 0%, #3b82f6 50%, #000000 100%);
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            background-clip: text;
+
+        }
+
+        
+
+        .glass-effect {
+
+            background: rgba(255, 255, 255, 0.1);
+
+            backdrop-filter: blur(20px);
+
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+        }
+
+        
+
+        .card-hover {
+
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+
+        
+
+        .card-hover:hover {
+
+            transform: translateY(-15px) scale(1.03);
+
+            box-shadow: 0 30px 60px rgba(255, 193, 7, 0.2);
+
+        }
+
+        
+
+        .nav-link {
+
+            position: relative;
+
+            transition: all 0.3s ease;
+
+        }
+
+        
+
+        .nav-link::after {
+
+            content: '';
+
+            position: absolute;
+
+            width: 0;
+
+            height: 3px;
+
+            bottom: -10px;
+
+            left: 0;
+
+            background: linear-gradient(135deg, #ffc107 0%, #3b82f6 100%);
+
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+            border-radius: 2px;
+
+        }
+
+        
+
+        .nav-link:hover::after,
+
+        .nav-link.active::after {
+
+            width: 100%;
+
+        }
+
+        
+
+        .animate-on-scroll {
+
+            opacity: 0;
+
+            transform: translateY(60px);
+
+            transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+
+        
+
+        .animate-on-scroll.visible {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+        
+
+        .page {
+
+            display: none;
+
+        }
+
+        
+
+        .page.active {
+
+            display: block;
+
+        }
+
+        
+
+        .typewriter {
+
+            overflow: hidden;
+
+            border-right: 4px solid #ffc107;
+
+            white-space: nowrap;
+
+            animation: typewriter 4s steps(40) 1s forwards, blink 1s infinite;
+
+        }
+
+        
+
+        .tech-grid {
+
+            background-image: 
+
+                linear-gradient(rgba(255, 193, 7, 0.1) 1px, transparent 1px),
+
+                linear-gradient(90deg, rgba(255, 193, 7, 0.1) 1px, transparent 1px);
+
+            background-size: 60px 60px;
+
+        }
+
+        
+
+        .service-icon {
+
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+
+        
+
+        .service-card:hover .service-icon {
+
+            transform: scale(1.2) rotate(5deg);
+
+        }
+
+        
+
+        .hero-pattern {
+
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #3b82f6 50%, #ffc107 75%, #ffffff 100%);
+
+            background-size: 400% 400%;
+
+        }
+
+        
+
+        .section-spacing {
+
+            padding-top: 8rem;
+
+            padding-bottom: 8rem;
+
+        }
+
+        
+
+        .container-spacing {
+
+            padding-left: 2rem;
+
+            padding-right: 2rem;
+
+        }
+
+        
+
+        @media (min-width: 640px) {
+
+            .container-spacing {
+
+                padding-left: 3rem;
+
+                padding-right: 3rem;
+
+            }
+
+        }
+
+        
+
+        @media (min-width: 1024px) {
+
+            .container-spacing {
+
+                padding-left: 4rem;
+
+                padding-right: 4rem;
+
+            }
+
+        }
+
+        
+
+        .content-spacing > * + * {
+
+            margin-top: 2rem;
+
+        }
+
+        
+
+        .large-spacing > * + * {
+
+            margin-top: 4rem;
+
+        }
+
+        
+
+        .xl-spacing > * + * {
+
+            margin-top: 6rem;
+
+        }
+
+        
+
+        .yellow-glow {
+
+            box-shadow: 0 0 40px rgba(255, 193, 7, 0.3);
+
+        }
+
+        
+
+        .blue-glow {
+
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+
+        }
+
+    
+/* ---------- Mobile responsiveness patch (injected) ---------- */
+@media (max-width: 640px) {
+  h1.text-8xl { font-size: 2.2rem !important; line-height: 1.05 !important; }
+  h1.text-6xl { font-size: 1.8rem !important; line-height: 1.08 !important; }
+  .text-9xl { font-size: 2.6rem !important; }
+  .text-8xl { font-size: 2.2rem !important; }
+  .text-3xl { font-size: 1rem !important; }
+  .text-2xl { font-size: 0.95rem !important; }
+  .px-20 { padding-left: 1rem !important; padding-right: 1rem !important; }
+  .py-8 { padding-top: 0.6rem !important; padding-bottom: 0.6rem !important; }
+  .px-16 { padding-left: 0.9rem !important; padding-right: 0.9rem !important; }
+  .py-6 { padding-top: 0.6rem !important; padding-bottom: 0.6rem !important; }
+  section.min-h-screen { min-height: calc(100vh - 72px) !important; padding-top: 5rem !important; padding-bottom: 2.5rem !important; }
+  .blur-3xl, .blur-2xl { display: none !important; }
+  .animate-lightning, .animate-float { display: none !important; }
+  .text-4xl { font-size: 1.25rem !important; }
+  .grid.md\:grid-cols-3, .grid.lg\:grid-cols-3 { grid-template-columns: 1fr !important; }
+  .bg-white.p-12, .bg-white.p-16, .glass-effect.p-12 { padding: 1rem !important; }
+  footer p, footer .text-4xl { font-size: 0.85rem !important; }
+  .h-\[400px\] { height: auto !important; padding-bottom: 1.25rem !important; }
+  input[type="text"], input[type="email"], textarea, select { font-size: 1rem !important; padding: 0.9rem 0.9rem !important; }
+}
+@media (max-width: 420px) {
+  h1.text-8xl, h1.text-6xl, .text-9xl { font-size: 1.8rem !important; }
+  .text-3xl { font-size: 0.95rem !important; }
+  .px-20, .px-16 { padding-left: 0.6rem !important; padding-right: 0.6rem !important; }
+  .nav-link.text-lg { font-size: 0.95rem !important; }
+  .max-w-7xl { padding-left: 1rem !important; padding-right: 1rem !important; max-width: 100% !important; }
+  .container-spacing { padding-left: 1rem !important; padding-right: 1rem !important; }
+}
+@media (max-width: 768px) {
+  .animate-float, .animate-pulse-glow, .animate-bounce-in, .animate-gradient {
+    animation-duration: 0.01s !important;
+    animation-iteration-count: 1 !important;
+    opacity: 0.95 !important;
+  }
+}
+@media (max-width: 768px) {
+  [class*="w-96"], [class*="w-80"], [class*="w-\[500px\]"], [class*="h-96"], [class*="h-80"], [class*="h-\[500px\]"] {
+    display: none !important;
+  }
+}
+/* ---------- End of responsiveness patch ---------- */
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init({
+      publicKey: "RcQcq9_svratbCwVY", // replace this
+    });
+  })();
+</script>
+
+</head>
+
+<body class="bg-gray-50 overflow-x-hidden">
+
+    <!-- Navigation -->
+
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-xl z-50 shadow-xl border-b border-yellow-200">
+
+        <div class="max-w-7xl mx-auto container-spacing">
+
+            <div class="flex justify-between items-center py-6">
+
+                <button onclick="showPage('home')" class="flex items-center animate-slideInLeft hover:scale-105 transition-transform duration-300 cursor-pointer group">
+
+                    <div class="w-10 h-10  flex items-center justify-center shadow-lg  ">
+
+                        <img src="image/weblogo.png" alt="pdf">
+
+                    </div>
+
+                    <div class="ml-5">
+
+                        <span class="text-4xl font-black text-black">Oryntecore</span>
+
+                        <p class="text-sm text-gray-600 -mt-1 font-semibold">Digital Innovation Agency</p>
+
+                    </div>
+
+                </button>
+
+                
+
+                <div class="hidden lg:flex space-x-10 animate-fadeInUp">
+
+                    <button onclick="showPage('home')" class="nav-link text-black hover:text-yellow-500 font-bold page-nav active text-lg">Home</button>
+
+                    <button onclick="showPage('services')" class="nav-link text-black hover:text-yellow-500 font-bold page-nav text-lg">Services</button>
+
+                    <button onclick="showPage('about')" class="nav-link text-black hover:text-yellow-500 font-bold page-nav text-lg">About</button>
+
+                    <button onclick="showPage('portfolio')" class="nav-link text-black hover:text-yellow-500 font-bold page-nav text-lg">Portfolio</button>
+
+                    <button onclick="showPage('contact')" class="nav-link text-black hover:text-yellow-500 font-bold page-nav text-lg">Contact</button>
+
+                </div>
+
+                
+
+                <!-- Mobile Menu Button -->
+
+                <button onclick="toggleMobileMenu()" class="lg:hidden flex items-center justify-center w-12 h-12 bg-black rounded-xl text-white hover:bg-gray-800 transition-colors">
+
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+
+                    </svg>
+
+                </button>
+
+                
+
+                <button onclick="showPage('contact')" class="hidden lg:block bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-10 py-4 rounded-2xl hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 animate-slideInRight font-bold text-lg">
+
+                    Get Started
+
+                </button>
+
+            </div>
+
+            
+
+            <!-- Mobile Menu -->
+
+            <div id="mobileMenu" class="lg:hidden hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl shadow-2xl border-t border-yellow-200 z-40">
+
+                <div class="container-spacing py-8">
+
+                    <div class="flex flex-col space-y-6">
+
+                        <button onclick="showPage('home'); toggleMobileMenu()" class="nav-link text-black hover:text-yellow-500 font-bold page-nav text-xl text-left">Home</button>
+
+                        <button onclick="showPage('services'); toggleMobileMenu()" class="nav-link text-black hover:text-yellow-500 font-bold page-nav text-xl text-left">Services</button>
+
+                        <button onclick="showPage('about'); toggleMobileMenu()" class="nav-link text-black hover:text-yellow-500 font-bold page-nav text-xl text-left">About</button>
+
+                        <button onclick="showPage('portfolio'); toggleMobileMenu()" class="nav-link text-black hover:text-yellow-500 font-bold page-nav text-xl text-left">Portfolio</button>
+
+                        <button onclick="showPage('contact'); toggleMobileMenu()" class="nav-link text-black hover:text-yellow-500 font-bold page-nav text-xl text-left">Contact</button>
+
+                        <button onclick="showPage('contact'); toggleMobileMenu()" class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-8 py-4 rounded-2xl hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 font-bold text-lg mt-4">
+
+                            Get Started
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Home Page -->
+
+    <div id="home" class="page active">
+
+        <!-- Hero Section -->
+
+        <section class="min-h-screen flex items-center bg-gradient-to-br from-black via-gray-900 to-blue-900 relative overflow-hidden">
+
+            <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-transparent to-black/60"></div>
+
+            
+
+            <!-- Dynamic Background Elements -->
+
+            <div class="absolute inset-0 overflow-hidden">
+
+                <div class="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-yellow-400/20 to-blue-500/20 rounded-full blur-3xl animate-float animate-morphing"></div>
+
+                <div class="absolute top-1/2 right-20 w-[500px] h-[500px] bg-gradient-to-r from-blue-500/15 to-yellow-400/15 rounded-full blur-3xl animate-float animate-morphing" style="animation-delay: 3s;"></div>
+
+                <div class="absolute bottom-20 left-1/3 w-80 h-80 bg-gradient-to-r from-white/10 to-yellow-400/20 rounded-full blur-3xl animate-float animate-morphing" style="animation-delay: 6s;"></div>
+
+                
+
+                <!-- Lightning Bolts -->
+
+                <div class="absolute top-1/4 left-1/4 text-yellow-400 text-4xl animate-lightning" style="animation-delay: 1s;">⚡</div>
+
+                <div class="absolute top-1/3 right-1/3 text-blue-400 text-3xl animate-lightning" style="animation-delay: 3s;">💫</div>
+
+                <div class="absolute bottom-1/3 left-1/5 text-white text-2xl animate-lightning" style="animation-delay: 5s;">✨</div>
+
+            </div>
+
+            
+
+            <div class="max-w-7xl mx-auto container-spacing relative z-10 pt-20 sm:pt-28 lg:pt-32 pb-10 sm:pb-16 lg:pb-20">
+
+                <div class="text-center">
+
+                    <!-- Main Hero Content -->
+
+                    <div class="animate-bounce-in mb-16">
+
+                        <span class="inline-flex mt-3 items-center px-10 py-5 bg-gradient-to-r from-yellow-400/20 to-blue-500/20 backdrop-blur-xl border border-yellow-400/30 rounded-full text-white text-xl font-bold mb-16 shadow-2xl yellow-glow">
+
+                            <span class="w-5 h-5 bg-yellow-400 rounded-full mr-5 animate-pulse shadow-lg shadow-yellow-400/50"></span>
+
+                            ⚡ Digital Innovation • Technology • Excellence ⚡
+
+                        </span>
+
+                    </div>
+
+                    
+
+                    <h1 class="text-4xl sm:text-6xl md:text-3xl sm:text-2xl sm:text-4xl lg:text-5xl lg:text-7xl lg:text-9xl lg:text-9xl font-black mb-16 animate-slideInLeft leading-tight" style="animation-delay: 0.2s;">
+
+                        <span class="text-white drop-shadow-2xl">Transform Your</span>
+
+                        <span class="block gradient-text typewriter drop-shadow-2xl">Digital Future</span>
+
+                    </h1>
+
+                    
+
+                    <p class="text-base sm:text-lg md:text-xl lg:text-3xl lg:text-3xl mb-20 text-gray-200 leading-relaxed animate-fadeInUp font-medium drop-shadow-lg max-w-5xl mx-auto" style="animation-delay: 0.6s;">
+
+                        We create stunning digital experiences that drive real business results. From cutting-edge websites to AI-powered solutions.
+
+                    </p>
+
+                    
+
+                    <div class="flex flex-col sm:flex-row gap-8 justify-center animate-fadeInUp mb-20" style="animation-delay: 0.8s;">
+
+                        <button onclick="showPage('services')" class="group relative bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-3 sm:px-12 sm:py-5 md:px-16 md:py-6 rounded-3xl font-black text-2xl hover:shadow-2xl hover:shadow-yellow-400/40 transition-all duration-500 transform hover:scale-105 overflow-hidden">
+
+                            <span class="relative z-10">🚀 Explore Services</span>
+
+                            <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                        </button>
+
+                        <button onclick="showPage('portfolio')" class="group relative bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 sm:px-12 sm:py-5 md:px-16 md:py-6 rounded-3xl font-black text-2xl hover:shadow-2xl hover:shadow-blue-500/40 transition-all duration-500 transform hover:scale-105 overflow-hidden">
+
+                            <span class="relative z-10">💼 View Portfolio</span>
+
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                        </button>
+
+                    </div>
+
+                    
+
+                    <!-- Enhanced Stats -->
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 animate-fadeInUp" style="animation-delay: 1s;">
+
+                        <div class="text-center group bg-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/10 hover:border-yellow-400/30 transition-all duration-500 card-hover">
+
+                            <div class="text-3xl sm:text-2xl sm:text-4xl lg:text-5xl lg:text-7xl font-black gradient-text mb-6 group-hover:scale-110 transition-transform duration-300">90+</div>
+
+                            <div class="text-white font-bold text-2xl drop-shadow-md">Projects Delivered</div>
+
+                            <div class="text-gray-300 text-lg mt-2">Worldwide Success</div>
+
+                        </div>
+
+                        <div class="text-center group bg-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/10 hover:border-blue-400/30 transition-all duration-500 card-hover">
+
+                            <div class="text-3xl sm:text-2xl sm:text-4xl lg:text-5xl lg:text-7xl font-black gradient-text mb-6 group-hover:scale-110 transition-transform duration-300">98%</div>
+
+                            <div class="text-white font-bold text-2xl drop-shadow-md">Client Satisfaction</div>
+
+                            <div class="text-gray-300 text-lg mt-2">Happy Customers</div>
+
+                        </div>
+
+                        <div class="text-center group bg-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/10 hover:border-white/30 transition-all duration-500 card-hover">
+
+                            <div class="text-3xl sm:text-2xl sm:text-4xl lg:text-5xl lg:text-7xl font-black gradient-text mb-6 group-hover:scale-110 transition-transform duration-300">24/7</div>
+
+                            <div class="text-white font-bold text-2xl drop-shadow-md">Support Available</div>
+
+                            <div class="text-gray-300 text-lg mt-2">Always Here</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+    </div>
+
+
+
+    <!-- Services Page -->
+
+    <div id="services" class="page">
+
+        <section class="section-spacing bg-gradient-to-br from-gray-50 to-blue-50 pt-32">
+
+            <div class="max-w-7xl mx-auto container-spacing">
+
+                <div class="text-center mb-20 animate-on-scroll">
+
+                    <span class="inline-block px-8 py-4 bg-blue-100 rounded-full text-blue-600 text-lg font-bold mb-8">
+
+                        🚀 Complete Solutions
+
+                    </span>
+
+                    <h1 class="text-6xl lg:text-3xl sm:text-2xl sm:text-4xl lg:text-5xl lg:text-7xl font-black gradient-text mb-8">
+
+                        Our Services
+
+                    </h1>
+
+                    <p class="text-2xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
+
+                        We offer comprehensive digital solutions to help your business thrive in the modern digital landscape. From development to marketing, we've got you covered.
+
+                    </p>
+
+                </div>
+
+                
+
+                <div class="grid lg:grid-cols-3 gap-12 mb-20">
+
+                    <!-- Website Development -->
+
+                    <div class="bg-white p-12 rounded-3xl shadow-xl card-hover animate-on-scroll">
+
+                        <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mb-10 animate-pulse-glow">
+
+                            <span class="text-2xl sm:text-4xl lg:text-5xl">💻</span>
+
+                        </div>
+
+                        <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold mb-8 text-gray-800">Website Development</h3>
+
+                        <p class="text-gray-600 mb-10 leading-relaxed text-lg">
+
+                            Custom websites and web applications built with the latest technologies for optimal performance and user experience.
+
+                        </p>
+
+                        <ul class="space-y-4 mb-10">
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-blue-500 rounded-full mr-4"></div>
+
+                                Responsive Web Design
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-blue-500 rounded-full mr-4"></div>
+
+                                Progressive Web Apps
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-blue-500 rounded-full mr-4"></div>
+
+                                SEO Optimization
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-blue-500 rounded-full mr-4"></div>
+
+                                Performance Optimization
+
+                            </li>
+
+                        </ul>
+
+                        <button class="text-blue-600 font-bold hover:text-blue-800 transition-colors group text-lg">
+
+                            Learn More →
+
+                            <span class="inline-block transition-transform group-hover:translate-x-2 ml-2">→</span>
+
+                        </button>
+
+                    </div>
+
+                    
+
+                    <!-- MERN Stack Development -->
+
+                    <div class="bg-white p-12 rounded-3xl shadow-xl card-hover animate-on-scroll" style="animation-delay: 0.1s;">
+
+                        <div class="w-24 h-24 bg-gradient-to-br from-green-500 to-green-600 rounded-3xl flex items-center justify-center mb-10 animate-pulse-glow">
+
+                            <span class="text-2xl sm:text-4xl lg:text-5xl">⚛️</span>
+
+                        </div>
+
+                        <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold mb-8 text-gray-800">MERN Stack Development</h3>
+
+                        <p class="text-gray-600 mb-10 leading-relaxed text-lg">
+
+                            Full-stack web applications using MongoDB, Express.js, React, and Node.js for scalable and modern solutions.
+
+                        </p>
+
+                        <ul class="space-y-4 mb-10">
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-green-500 rounded-full mr-4"></div>
+
+                                React Applications
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-green-500 rounded-full mr-4"></div>
+
+                                Node.js Backend
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-green-500 rounded-full mr-4"></div>
+
+                                MongoDB Database
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-green-500 rounded-full mr-4"></div>
+
+                                API Development
+
+                            </li>
+
+                        </ul>
+
+                        <button class="text-green-600 font-bold hover:text-green-800 transition-colors group text-lg">
+
+                            Learn More →
+
+                            <span class="inline-block transition-transform group-hover:translate-x-2 ml-2">→</span>
+
+                        </button>
+
+                    </div>
+
+                    
+
+                    <!-- E-commerce Websites -->
+
+                    <div class="bg-white p-12 rounded-3xl shadow-xl card-hover animate-on-scroll" style="animation-delay: 0.2s;">
+
+                        <div class="w-24 h-24 bg-gradient-to-br from-purple-500 to-purple-600 rounded-3xl flex items-center justify-center mb-10 animate-pulse-glow">
+
+                            <span class="text-2xl sm:text-4xl lg:text-5xl">🛒</span>
+
+                        </div>
+
+                        <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold mb-8 text-gray-800">E-commerce Websites</h3>
+
+                        <p class="text-gray-600 mb-10 leading-relaxed text-lg">
+
+                            Complete online stores with secure payment processing, inventory management, and customer analytics.
+
+                        </p>
+
+                        <ul class="space-y-4 mb-10">
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-purple-500 rounded-full mr-4"></div>
+
+                                Shopify Development
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-purple-500 rounded-full mr-4"></div>
+
+                                WooCommerce
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-purple-500 rounded-full mr-4"></div>
+
+                                Payment Integration
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-purple-500 rounded-full mr-4"></div>
+
+                                Inventory Management
+
+                            </li>
+
+                        </ul>
+
+                        <button class="text-purple-600 font-bold hover:text-purple-800 transition-colors group text-lg">
+
+                            Learn More →
+
+                            <span class="inline-block transition-transform group-hover:translate-x-2 ml-2">→</span>
+
+                        </button>
+
+                    </div>
+
+                    
+
+                    <!-- Graphic Design -->
+
+                    <div class="bg-white p-12 rounded-3xl shadow-xl card-hover animate-on-scroll" style="animation-delay: 0.3s;">
+
+                        <div class="w-24 h-24 bg-gradient-to-br from-pink-500 to-pink-600 rounded-3xl flex items-center justify-center mb-10 animate-pulse-glow">
+
+                            <span class="text-2xl sm:text-4xl lg:text-5xl">🎨</span>
+
+                        </div>
+
+                        <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold mb-8 text-gray-800">Graphic Design</h3>
+
+                        <p class="text-gray-600 mb-10 leading-relaxed text-lg">
+
+                            Creative visual solutions including branding, marketing materials, and digital assets that make your brand stand out.
+
+                        </p>
+
+                        <ul class="space-y-4 mb-10">
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-pink-500 rounded-full mr-4"></div>
+
+                                Logo & Brand Identity
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-pink-500 rounded-full mr-4"></div>
+
+                                Marketing Materials
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-pink-500 rounded-full mr-4"></div>
+
+                                UI/UX Design
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-pink-500 rounded-full mr-4"></div>
+
+                                Social Media Graphics
+
+                            </li>
+
+                        </ul>
+
+                        <button class="text-pink-600 font-bold hover:text-pink-800 transition-colors group text-lg">
+
+                            Learn More →
+
+                            <span class="inline-block transition-transform group-hover:translate-x-2 ml-2">→</span>
+
+                        </button>
+
+                    </div>
+
+                    
+
+                    <!-- AI Development -->
+
+                    <div class="bg-white p-12 rounded-3xl shadow-xl card-hover animate-on-scroll" style="animation-delay: 0.4s;">
+
+                        <div class="w-24 h-24 bg-gradient-to-br from-red-500 to-red-600 rounded-3xl flex items-center justify-center mb-10 animate-pulse-glow">
+
+                            <span class="text-2xl sm:text-4xl lg:text-5xl">🤖</span>
+
+                        </div>
+
+                        <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold mb-8 text-gray-800">AI Development</h3>
+
+                        <p class="text-gray-600 mb-10 leading-relaxed text-lg">
+
+                            Intelligent solutions powered by machine learning and artificial intelligence to automate and optimize your business processes.
+
+                        </p>
+
+                        <ul class="space-y-4 mb-10">
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-red-500 rounded-full mr-4"></div>
+
+                                Machine Learning Models
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-red-500 rounded-full mr-4"></div>
+
+                                Chatbot Development
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-red-500 rounded-full mr-4"></div>
+
+                                Data Analytics
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-red-500 rounded-full mr-4"></div>
+
+                                Process Automation
+
+                            </li>
+
+                        </ul>
+
+                        <button class="text-red-600 font-bold hover:text-red-800 transition-colors group text-lg">
+
+                            Learn More →
+
+                            <span class="inline-block transition-transform group-hover:translate-x-2 ml-2">→</span>
+
+                        </button>
+
+                    </div>
+
+                    
+
+                    <!-- Digital Marketing -->
+
+                    <div class="bg-white p-12 rounded-3xl shadow-xl card-hover animate-on-scroll" style="animation-delay: 0.5s;">
+
+                        <div class="w-24 h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl flex items-center justify-center mb-10 animate-pulse-glow">
+
+                            <span class="text-2xl sm:text-4xl lg:text-5xl">📈</span>
+
+                        </div>
+
+                        <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold mb-8 text-gray-800">Digital Marketing</h3>
+
+                        <p class="text-gray-600 mb-10 leading-relaxed text-lg">
+
+                            Comprehensive digital marketing strategies to increase your online presence and drive qualified leads to your business.
+
+                        </p>
+
+                        <ul class="space-y-4 mb-10">
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-orange-500 rounded-full mr-4"></div>
+
+                                SEO & SEM
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-orange-500 rounded-full mr-4"></div>
+
+                                Social Media Marketing
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-orange-500 rounded-full mr-4"></div>
+
+                                Content Marketing
+
+                            </li>
+
+                            <li class="flex items-center text-gray-700 text-lg">
+
+                                <div class="w-3 h-3 bg-orange-500 rounded-full mr-4"></div>
+
+                                Lead Generation
+
+                            </li>
+
+                        </ul>
+
+                        <button class="text-orange-600 font-bold hover:text-orange-800 transition-colors group text-lg">
+
+                            Learn More →
+
+                            <span class="inline-block transition-transform group-hover:translate-x-2 ml-2">→</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                
+
+                <!-- Additional Services -->
+
+                <div class="bg-white rounded-3xl p-16 shadow-xl animate-on-scroll">
+
+                    <div class="text-center mb-16">
+
+                        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black gradient-text mb-8">Additional Services</h2>
+
+                        <p class="text-2xl text-gray-600 max-w-4xl mx-auto">
+
+                            We also provide specialized services to meet all your digital needs
+
+                        </p>
+
+                    </div>
+
+                    
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                        <div class="text-center animate-on-scroll">
+
+                            <div class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+
+                                <span class="text-base sm:text-lg md:text-xl lg:text-3xl">📊</span>
+
+                            </div>
+
+                            <h4 class="text-xl font-bold mb-4">Admin Dashboard</h4>
+
+                            <p class="text-gray-600">Custom admin panels for easy content and user management</p>
+
+                        </div>
+
+                        
+
+                        <div class="text-center animate-on-scroll" style="animation-delay: 0.1s;">
+
+                            <div class="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+
+                                <span class="text-base sm:text-lg md:text-xl lg:text-3xl">📱</span>
+
+                            </div>
+
+                            <h4 class="text-xl font-bold mb-4">Social Media Management</h4>
+
+                            <p class="text-gray-600">Complete social media strategy and content management</p>
+
+                        </div>
+
+                        
+
+                        <div class="text-center animate-on-scroll" style="animation-delay: 0.2s;">
+
+                            <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+
+                                <span class="text-base sm:text-lg md:text-xl lg:text-3xl">☁️</span>
+
+                            </div>
+
+                            <h4 class="text-xl font-bold mb-4">Cloud Integration & Migration</h4>
+
+                            <p class="text-gray-600">Seamless transition of your business operations to the cloud</p>
+
+                        </div>
+
+                        
+
+                        <div class="text-center animate-on-scroll" style="animation-delay: 0.3s;">
+
+                            <div class="w-20 h-20 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+
+                                <span class="text-base sm:text-lg md:text-xl lg:text-3xl">🛡️</span>
+
+                            </div>
+
+                            <h4 class="text-xl font-bold mb-4">Cybersecurity & Compliance</h4>
+
+                            <p class="text-gray-600">Protecting your digital assets with end-to-end security solutions and ensuring compliance with international standards.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- About Page -->
+
+    <div id="about" class="page">
+
+        <section class="section-spacing bg-gradient-to-br from-purple-50 to-red-50 pt-32">
+
+            <div class="max-w-7xl mx-auto container-spacing">
+
+                <div class="text-center mb-20 animate-on-scroll">
+
+                    <span class="inline-block px-8 py-4 mt-3 bg-purple-100 rounded-full text-purple-600 text-lg font-bold mb-8">
+
+                        🌟 Our Story
+
+                    </span>
+
+                    <h1 class="text-6xl sm:text-4xl lg:text-5xl  font-black gradient-text mb-8">
+
+                        About Oryntecore
+
+                    </h1>
+
+                    <p class="text-2xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
+
+                        OrynTecore is a student-driven digital innovation agency committed to delivering professional solutions that empower businesses to grow. We combine emerging talent with cutting-edge technology, refined design, and strategic insight to create impactful results for our clients.          </p>
+
+                </div>
+
+                
+
+                <div class="grid lg:grid-cols-2 gap-20 items-center mb-20">
+
+                    <div class="animate-on-scroll">
+
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black gradient-text mt-10 mb-3">Our Mission</h2>
+
+                        <p class="text-lg sm:text-xl text-gray-600 leading-relaxed my-10 sm:mt-10 sm:mb-20 lg:mb-24  lg:px-0">
+
+                            To empower businesses with innovative digital solutions that drive growth, enhance user experiences, and create lasting value in an ever-evolving digital landscape.
+
+                        </p>
+
+                        
+
+                        <div class="space-y-10">
+
+                            <div class="flex items-start space-x-8">
+
+                                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+
+                                    <span class="text-white text-2xl font-bold">O</span>
+
+                                </div>
+
+                                <div>
+
+                                    <h4 class="text-2xl font-bold text-gray-800 mb-4">Originality</h4>
+
+                                    <p class="text-gray-600 leading-relaxed text-lg">We believe every great solution starts with an original idea. Our creative approach ensures uniqueness in every project we undertake, setting your brand apart from the competition.</p>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="flex items-start space-x-8">
+
+                                <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+
+                                    <span class="text-white text-2xl font-bold">T</span>
+
+                                </div>
+
+                                <div>
+
+                                    <h4 class="text-2xl font-bold text-gray-800 mb-4">Technology</h4>
+
+                                    <p class="text-gray-600 leading-relaxed text-lg">We harness the power of emerging technologies to build scalable, efficient, and future-ready solutions that drive real impact and sustainable growth for your business.</p>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="flex items-start space-x-8">
+
+                                <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+
+                                    <span class="text-white text-2xl font-bold">C</span>
+
+                                </div>
+
+                                <div>
+
+                                    <h4 class="text-2xl font-bold text-gray-800 mb-4">Core Values</h4>
+
+                                    <p class="text-gray-600 leading-relaxed text-lg">Integrity, excellence, and commitment form the foundation of everything we do, ensuring lasting partnerships, transparent communication, and sustainable success for all stakeholders.</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="relative animate-on-scroll" style="animation-delay: 0.3s;">
+
+                        <div class="grid grid-cols-2 gap-10">
+
+                            <div class="space-y-10">
+
+                                <div class="bg-white p-10 rounded-3xl shadow-xl card-hover">
+
+                                    <div class="text-2xl sm:text-4xl lg:text-5xl font-black gradient-text mb-4">90+</div>
+
+                                    <div class="text-gray-600 font-semibold text-lg">Projects Delivered</div>
+
+                                </div>
+
+                                <div class="bg-white p-10 rounded-3xl shadow-xl card-hover">
+
+                                    <div class="text-2xl sm:text-4xl lg:text-5xl font-black gradient-text mb-4">$1M+</div>
+
+                                    <div class="text-gray-600 font-semibold text-lg">Value Created</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="space-y-10 mt-20">
+
+                                <div class="bg-white p-10 rounded-3xl shadow-xl card-hover">
+
+                                    <div class="text-2xl sm:text-4xl lg:text-5xl font-black gradient-text mb-4">98%</div>
+
+                                    <div class="text-gray-600 font-semibold text-lg">Client Satisfaction</div>
+
+                                </div>
+
+                                <div class="bg-white p-10 rounded-3xl shadow-xl card-hover">
+
+                                    <div class="text-2xl sm:text-4xl lg:text-5xl font-black gradient-text mb-4">50+</div>
+
+                                    <div class="text-gray-600 font-semibold text-lg">Team Members</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+               <!-- Team Section -->
+
+<div class="bg-white rounded-3xl p-16 shadow-xl animate-on-scroll">
+
+    <div class="text-center mb-20">
+
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black gradient-text mb-8">Leadership Team</h2>
+
+        <p class="text-2xl text-gray-600 max-w-4xl mx-auto">
+
+            Meet the visionaries driving Oryntecore's mission forward with expertise and passion
+
+        </p>
+
+    </div>
+
+    
+
+    <div class="grid md:grid-cols-4 gap-16">
+
+        <!-- Zabir -->
+
+        <div class="text-center animate-on-scroll">
+
+            <div class="w-40 h-40 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full mx-auto mb-8 flex items-center justify-center">
+
+                <img src="image/ME.jpeg" class="rounded-full mx-auto">
+
+            </div>
+
+            <h4 class="text-2xl font-bold mb-3">Zabir Uddin</h4>
+
+            <p class="text-blue-600 font-semibold mb-6 text-lg">Founder</p>
+
+            <p class="text-gray-600 leading-relaxed">
+
+                Visionary founder passionate about digital innovation, startup growth, and transformative solutions. 
+
+                Dedicated to blending creativity, technology, and strategy to build impactful digital experiences.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Jannat -->
+
+        <div class="text-center animate-on-scroll" style="animation-delay: 0.1s;">
+
+            <div class="w-40 h-40 bg-gradient-to-br from-purple-500 to-red-500 rounded-full mx-auto mb-8 flex items-center justify-center">
+
+                  <img src="image/jannat.jpg" class="rounded-full mx-auto">
+
+            </div>
+
+            <h4 class="text-2xl font-bold mb-3">Jannat Mughal</h4>
+
+            <p class="text-purple-600 font-semibold mb-6 text-lg">Co-Founder / Director</p>
+
+            <p class="text-gray-600 leading-relaxed">
+
+                Visionary leader and strategist, dedicated to driving innovation, collaboration, and growth at Oryntecore.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Javeria -->
+
+        <div class="text-center animate-on-scroll" style="animation-delay: 0.2s;">
+
+            <div class="w-40 h-40 bg-gradient-to-br from-red-500 to-orange-500 rounded-full mx-auto mb-8 flex items-center justify-center">
+
+                <img src="image/javeria.jpg" class="rounded-full mx-auto">
+
+            </div>
+
+            <h4 class="text-2xl font-bold mb-3">Javeria Arif</h4>
+
+            <p class="text-red-600 font-semibold mb-6 text-lg">Chief Operating Officer</p>
+
+            <p class="text-gray-600 leading-relaxed">
+
+                Responsible for overseeing daily operations, optimizing processes, and ensuring smooth execution of projects at Oryntecore.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Dua -->
+
+        <div class="text-center animate-on-scroll" style="animation-delay: 0.3s;">
+
+            <div class="w-40 h-40 bg-gradient-to-br from-green-500 to-teal-500 rounded-full mx-auto mb-8 flex items-center justify-center">
+
+                <img src="image/dua.jpg" class="rounded-full mx-auto">
+
+            </div>
+
+            <h4 class="text-2xl font-bold mb-3">Dua Mughal</h4>
+
+            <p class="text-green-600 font-semibold mb-6 text-lg">Spokesperson / Chief Strategy Officer</p>
+
+            <p class="text-gray-600 leading-relaxed">
+
+                Leads strategic direction and external communications, ensuring Oryntecore’s vision is clearly represented while driving long-term growth and partnerships.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- Portfolio Page -->
+
+    <div id="portfolio" class="page">
+
+        <section class="section-spacing bg-gradient-to-br from-black via-gray-900 to-blue-900 pt-32 relative overflow-hidden">
+
+            <!-- Dynamic Background -->
+
+            <div class="absolute inset-0">
+
+                <div class="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-yellow-400/10 to-blue-500/10 rounded-full blur-3xl animate-float"></div>
+
+                <div class="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-r from-blue-500/10 to-white/5 rounded-full blur-3xl animate-float" style="animation-delay: 3s;"></div>
+
+            </div>
+
+            
+
+            <div class="max-w-7xl mx-auto container-spacing relative z-10">
+
+                <div class="text-center mb-20 animate-on-scroll">
+
+                    <span class="inline-block px-10 py-5 bg-gradient-to-r from-yellow-400/20 to-blue-500/20 backdrop-blur-xl border border-yellow-400/30 rounded-full text-white text-xl font-bold mb-12 shadow-2xl yellow-glow">
+
+                        <span class="w-5 h-5 bg-yellow-400 rounded-full mr-5 animate-pulse shadow-lg shadow-yellow-400/50"></span>
+
+                        🏆 Our Digital Masterpieces
+
+                    </span> 
+
+                    <h1 class="text-4xl sm:text-6xl md:text-3xl sm:text-2xl sm:text-4xl lg:text-5xl lg:text-7xl lg:text-9xl lg:text-9xl font-black mb-12 leading-tight">
+
+                        <span class="text-white drop-shadow-2xl">Portfolio</span>
+
+                        <span class="block gradient-text drop-shadow-2xl">Showcase</span>
+
+                    </h1>
+
+                    <p class="text-base sm:text-lg md:text-xl lg:text-3xl lg:text-3xl mb-16 text-gray-200 leading-relaxed font-medium drop-shadow-lg max-w-6xl mx-auto">
+
+                        Witness the transformation of bold ideas into digital excellence. Each project represents our commitment to innovation, quality, and results.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Live Portfolio Link -->
+
+                <div class="text-center mb-20 animate-on-scroll">
+
+                    <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-12 border border-white/10 hover:border-yellow-400/30 transition-all duration-500 card-hover max-w-4xl mx-auto">
+
+                        <div class="flex items-center justify-center mb-8">
+
+                            <div class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl flex items-center justify-center animate-pulse-glow mr-6">
+
+                                <span class="text-4xl">🌐</span>
+
+                            </div>
+
+                            <div class="text-left">
+
+                                <h3 class="text-4xl font-black text-white mb-2">Live Portfolio Website</h3>
+
+                                <p class="text-xl text-gray-300">Experience our complete portfolio in action</p>
+
+                            </div>
+
+                        </div>
+
+                        <p class="text-2xl text-gray-200 mb-10 leading-relaxed">
+
+                            Explore our comprehensive portfolio showcasing real projects, client testimonials, and detailed case studies of our digital innovations.
+
+                        </p>
+
+                        <a href="./portfolio/index.html" target="_blank" class="group relative bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-3 sm:px-10 sm:py-4 md:px-14 md:py-5 rounded-3xl font-black text-2xl hover:shadow-2xl hover:shadow-yellow-400/40 transition-all duration-500 transform hover:scale-105 overflow-hidden inline-flex items-center">
+
+                            <span class="relative z-10 mr-4">🚀 Visit Live Portfolio</span>
+
+                            <svg class="w-8 h-8 group-hover:translate-x-2 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+
+                                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"/>
+
+                            </svg>
+
+                            <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                
+
+                <!-- Featured Projects Grid -->
+
+                <div class="grid lg:grid-cols-3 gap-12 mb-20">
+
+                    <!-- Project 1: E-commerce Platform -->
+
+                    <div class="group cursor-pointer animate-on-scroll">
+
+                        <div class="relative bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-xl rounded-3xl p-12 h-[400px] overflow-hidden border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-500 card-hover">
+
+                            <!-- Animated Background Pattern -->
+
+                            <div class="absolute inset-0 opacity-20">
+
+                                <div class="absolute top-4 right-4 w-32 h-32 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full blur-2xl animate-pulse"></div>
+
+                                <div class="absolute bottom-4 left-4 w-24 h-24 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-full blur-xl animate-pulse" style="animation-delay: 1s;"></div>
+
+                            </div>
+
+                            
+
+                            <div class="relative z-10 h-full flex flex-col justify-between">
+
+                                <div>
+
+                                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl flex items-center justify-center mb-8 animate-bounce-in yellow-glow">
+
+                                        <span class="text-white text-4xl">🛒</span>
+
+                                    </div>
+
+                                    <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-black text-white mb-4">Modern E-commerce</h3>
+
+                                    <p class="text-yellow-200 text-lg font-medium">Full-Stack Shopping Platform</p>
+
+                                </div>
+
+                                
+
+                                <div class="space-y-3">
+
+                                    <div class="flex items-center text-white">
+
+                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
+
+                                        <span class="font-semibold">React + Node.js</span>
+
+                                    </div>
+
+                                    <div class="flex items-center text-white">
+
+                                        <div class="w-3 h-3 bg-orange-400 rounded-full mr-3 animate-pulse"></div>
+
+                                        <span class="font-semibold">Payment Integration</span>
+
+                                    </div>
+
+                                    <div class="flex items-center text-white">
+
+                                        <div class="w-3 h-3 bg-yellow-500 rounded-full mr-3 animate-pulse"></div>
+
+                                        <span class="font-semibold">Admin Dashboard</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-8">
+
+                            <h4 class="text-base sm:text-lg md:text-xl lg:text-3xl font-black text-white mb-4">Complete Shopping Experience</h4>
+
+                            <p class="text-gray-300 leading-relaxed text-lg">Built a comprehensive e-commerce platform with advanced features including real-time inventory, secure payments, and intelligent product recommendations.</p>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Project 2: AI Dashboard -->
+
+                    <div class="group cursor-pointer animate-on-scroll" style="animation-delay: 0.2s;">
+
+                        <div class="relative bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-xl rounded-3xl p-12 h-[400px] overflow-hidden border border-blue-400/20 hover:border-blue-400/50 transition-all duration-500 card-hover">
+
+                            <!-- Animated Background Pattern -->
+
+                            <div class="absolute inset-0 opacity-20">
+
+                                <div class="absolute top-4 right-4 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full blur-2xl animate-pulse"></div>
+
+                                <div class="absolute bottom-4 left-4 w-24 h-24 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full blur-xl animate-pulse" style="animation-delay: 1s;"></div>
+
+                            </div>
+
+                            
+
+                            <div class="relative z-10 h-full flex flex-col justify-between">
+
+                                <div>
+
+                                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-500 rounded-3xl flex items-center justify-center mb-8 animate-bounce-in blue-glow">
+
+                                        <span class="text-white text-4xl">🤖</span>
+
+                                    </div>
+
+                                    <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-black text-white mb-4">AI Analytics Hub</h3>
+
+                                    <p class="text-blue-200 text-lg font-medium">Machine Learning Dashboard</p>
+
+                                </div>
+
+                                
+
+                                <div class="space-y-3">
+
+                                    <div class="flex items-center text-white">
+
+                                        <div class="w-3 h-3 bg-blue-400 rounded-full mr-3 animate-pulse"></div>
+
+                                        <span class="font-semibold">Real-time Analytics</span>
+
+                                    </div>
+
+                                    <div class="flex items-center text-white">
+
+                                        <div class="w-3 h-3 bg-purple-400 rounded-full mr-3 animate-pulse"></div>
+
+                                        <span class="font-semibold">Predictive Models</span>
+
+                                    </div>
+
+                                    <div class="flex items-center text-white">
+
+                                        <div class="w-3 h-3 bg-blue-500 rounded-full mr-3 animate-pulse"></div>
+
+                                        <span class="font-semibold">Data Visualization</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-8">
+
+                            <h4 class="text-base sm:text-lg md:text-xl lg:text-3xl font-black text-white mb-4">Intelligent Business Insights</h4>
+
+                            <p class="text-gray-300 leading-relaxed text-lg">Developed an AI-powered analytics platform that processes millions of data points to provide actionable business intelligence and predictive insights.</p>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Project 3: Creative Portfolio -->
+
+                    <div class="group cursor-pointer animate-on-scroll" style="animation-delay: 0.4s;">
+
+                        <div class="relative bg-gradient-to-br from-white/10 to-gray-500/20 backdrop-blur-xl rounded-3xl p-12 h-[400px] overflow-hidden border border-white/20 hover:border-white/50 transition-all duration-500 card-hover">
+
+                            <!-- Animated Background Pattern -->
+
+                            <div class="absolute inset-0 opacity-20">
+
+                                <div class="absolute top-4 right-4 w-32 h-32 bg-gradient-to-br from-white to-gray-400 rounded-full blur-2xl animate-pulse"></div>
+
+                                <div class="absolute bottom-4 left-4 w-24 h-24 bg-gradient-to-br from-gray-300 to-white rounded-full blur-xl animate-pulse" style="animation-delay: 1s;"></div>
+
+                            </div>
+
+                            
+
+                            <div class="relative z-10 h-full flex flex-col justify-between">
+
+                                <div>
+
+                                    <div class="w-20 h-20 bg-gradient-to-br from-white to-gray-300 rounded-3xl flex items-center justify-center mb-8 animate-bounce-in shadow-xl">
+
+                                        <span class="text-black text-4xl">🎨</span>
+
+                                    </div>
+
+                                    <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-black text-white mb-4">Creative Showcase</h3>
+
+                                    <p class="text-gray-200 text-lg font-medium">Interactive Portfolio Site</p>
+
+                                </div>
+
+                                
+
+                                <div class="space-y-3">
+
+                                    <div class="flex items-center text-white">
+
+                                        <div class="w-3 h-3 bg-white rounded-full mr-3 animate-pulse"></div>
+
+                                        <span class="font-semibold">3D Animations</span>
+
+                                    </div>
+
+                                    <div class="flex items-center text-white">
+
+                                        <div class="w-3 h-3 bg-gray-300 rounded-full mr-3 animate-pulse"></div>
+
+                                        <span class="font-semibold">Interactive Design</span>
+
+                                    </div>
+
+                                    <div class="flex items-center text-white">
+
+                                        <div class="w-3 h-3 bg-white rounded-full mr-3 animate-pulse"></div>
+
+                                        <span class="font-semibold">Mobile Optimized</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-8">
+
+                            <h4 class="text-base sm:text-lg md:text-xl lg:text-3xl font-black text-white mb-4">Immersive Digital Experience</h4>
+
+                            <p class="text-gray-300 leading-relaxed text-lg">Created a stunning interactive portfolio featuring 3D elements, smooth animations, and an engaging user experience that showcases creative work beautifully.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                <!-- Technologies & Stats Section -->
+
+                <div class="grid lg:grid-cols-2 gap-20 mb-20">
+
+                    <!-- Technologies Used -->
+
+                    <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-12 border border-white/10 animate-on-scroll">
+
+                        <h3 class="text-4xl font-black gradient-text mb-10">Technologies We Master</h3>
+
+                        <div class="grid grid-cols-3 gap-8">
+
+                            <div class="text-center group">
+
+                                <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+
+                                    <span class="text-2xl">⚛️</span>
+
+                                </div>
+
+                                <p class="text-white font-bold">React</p>
+
+                            </div>
+
+                            <div class="text-center group">
+
+                                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+
+                                    <span class="text-2xl">🟢</span>
+
+                                </div>
+
+                                <p class="text-white font-bold">Node.js</p>
+
+                            </div>
+
+                            <div class="text-center group">
+
+                                <div class="w-16 h-16 bg-gradient-to-br from-black to-gray-700 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+
+                                    <span class="text-2xl">🍃</span>
+
+                                </div>
+
+                                <p class="text-white font-bold">MongoDB</p>
+
+                            </div>
+
+                            <div class="text-center group">
+
+                                <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+
+                                    <span class="text-2xl">🎨</span>
+
+                                </div>
+
+                                <p class="text-white font-bold">Figma</p>
+
+                            </div>
+
+                            <div class="text-center group">
+
+                                <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+
+                                    <span class="text-2xl">🤖</span>
+
+                                </div>
+
+                                <p class="text-white font-bold">AI/ML</p>
+
+                            </div>
+
+                            <div class="text-center group">
+
+                                <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+
+                                    <span class="text-2xl">☁️</span>
+
+                                </div>
+
+                                <p class="text-white font-bold">Cloud</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Portfolio Stats -->
+
+                    <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-12 border border-white/10 animate-on-scroll" style="animation-delay: 0.2s;">
+
+                        <h3 class="text-4xl font-black gradient-text mb-10">Portfolio Impact</h3>
+
+                        <div class="space-y-8">
+
+                            <div class="flex items-center justify-between">
+
+                                <div>
+
+                                    <div class="text-4xl font-black text-yellow-400 mb-2">150</div>
+
+                                    <div class="text-white font-semibold text-lg">Projects Completed</div>
+
+                                </div>
+
+                                <div class="w-20 h-20 bg-gradient-to-br from-yellow-400/20 to-yellow-500/20 rounded-2xl flex items-center justify-center">
+
+                                    <span class="text-base sm:text-lg md:text-xl lg:text-3xl">🚀</span>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="flex items-center justify-between">
+
+                                <div>
+
+                                    <div class="text-4xl font-black text-blue-400 mb-2">95%</div>
+
+                                    <div class="text-white font-semibold text-lg">Client Satisfaction</div>
+
+                                </div>
+
+                                <div class="w-20 h-20 bg-gradient-to-br from-blue-400/20 to-blue-500/20 rounded-2xl flex items-center justify-center">
+
+                                    <span class="text-base sm:text-lg md:text-xl lg:text-3xl">⭐</span>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="flex items-center justify-between">
+
+                                <div>
+
+                                    <div class="text-4xl font-black text-white mb-2">24/7</div>
+
+                                    <div class="text-white font-semibold text-lg">Support Available</div>
+
+                                </div>
+
+                                <div class="w-20 h-20 bg-gradient-to-br from-white/10 to-gray-500/20 rounded-2xl flex items-center justify-center">
+
+                                    <span class="text-base sm:text-lg md:text-xl lg:text-3xl">🛠️</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                <!-- Call to Action -->
+
+                <div class="text-center animate-on-scroll">
+
+                    <div class="bg-gradient-to-r from-yellow-400/10 via-blue-500/10 to-white/5 backdrop-blur-xl rounded-3xl p-16 border border-yellow-400/20">
+
+                        <h2 class="text-6xl font-black gradient-text mb-8">Ready to Create Your Success Story?</h2>
+
+                        <p class="text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
+
+                            Let's transform your vision into a digital masterpiece that drives real results and creates lasting impact.
+
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-8 justify-center">
+
+                            <button onclick="showPage('contact')" class="group relative bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-3 sm:px-10 sm:py-4 md:px-14 md:py-5 rounded-3xl font-black text-2xl hover:shadow-2xl hover:shadow-yellow-400/40 transition-all duration-500 transform hover:scale-105 overflow-hidden">
+
+                                <span class="relative z-10">🚀 Start Your Project</span>
+
+                                <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                            </button>
+
+                            <a href="./portfolio/index.html" target="_blank" class="group relative bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 sm:px-10 sm:py-4 md:px-14 md:py-5 rounded-3xl font-black text-2xl hover:shadow-2xl hover:shadow-blue-500/40 transition-all duration-500 transform hover:scale-105 overflow-hidden">
+
+                                <span class="relative z-10">🌐 Explore Full Portfolio</span>
+
+                                <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- Contact Page -->
+
+    <div id="contact" class="page">
+
+        <section class="section-spacing gradient-bg animate-gradient relative overflow-hidden pt-32">
+
+            <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-black/30"></div>
+
+            <div class="max-w-7xl mx-auto container-spacing relative z-10">
+
+                <div class="text-center mb-20 animate-on-scroll">
+
+                    
+
+                    <h1 class="text-6xl lg:text-3xl sm:text-2xl sm:text-4xl lg:text-5xl lg:text-7xl mt-10 font-black text-white mb-8">
+
+                        Let's Create Something
+
+                        <span class="block gradient-text">Amazing Together</span>
+
+                    </h1>
+
+                    <p class="text-xl text-gray-200 max-w-5xl mx-auto leading-relaxed">
+
+                        Ready to transform your vision into reality? We're here to help you every step of the way with our comprehensive digital solutions.
+
+                    </p>
+
+                </div>
+
+                
+
+                <div class="grid lg:grid-cols-2 gap-20 items-start">
+
+                    <div class="text-white animate-on-scroll xl-spacing">
+
+                        <h2 class="text-4xl font-black mb-16">Contact Information</h2>
+
+                        <div class="space-y-12">
+
+                            <div class="flex items-start space-x-8">
+
+                                <div class="w-20 h-20 glass-effect rounded-3xl flex items-center justify-center flex-shrink-0">
+
+                                    <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+
+                                    </svg>
+
+                                </div>
+
+                                <div>
+
+                                    <h4 class="text-2xl font-bold mb-3">Email Us</h4>
+
+                                    <p class="text-gray-200 text-xl mb-2">info.oryntecore@gmail.com</p>
+
+                                    <p class="text-gray-300 text-lg">We'll respond within 24 hours</p>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="flex items-start space-x-8">
+
+                                <div class="w-20 h-20 glass-effect rounded-3xl flex items-center justify-center flex-shrink-0">
+
+                                    <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+
+                                    </svg>
+
+                                </div>
+
+                                <div>
+
+                                    <h4 class="text-2xl font-bold mb-3">Call Us</h4>
+
+                                    <p class="text-gray-200 text-xl mb-2">_92 3319991156</p>
+
+                                    <p class="text-gray-300 text-lg">Mon-Fri, 10AM-6PM IST</p>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="glass-effect rounded-3xl p-12 animate-on-scroll" style="animation-delay: 0.3s;" >
+
+                        <h3 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold text-white mb-10">Send us a message</h3>
+
+                        <form class="space-y-8" id="contactForm">
+
+                            <div class="grid md:grid-cols-2 gap-8">
+
+                                <div>
+
+                                    <label class="block text-white text-lg font-semibold mb-3">Full Name</label>
+
+                                    <input type="text" name="fullName" required placeholder="John Doe" class="w-full px-6 py-5 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-300 focus:outline-none focus:border-white/40 transition-colors text-lg">
+
+                                </div>
+
+                                <div>
+
+                                    <label class="block text-white text-lg font-semibold mb-3">Email Address</label>
+
+                                    <input type="email" name="email" required placeholder="john@example.com" class="w-full px-6 py-5 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-300 focus:outline-none focus:border-white/40 transition-colors text-lg">
+
+                                </div>
+
+                            </div>
+
+                           <div>
+
+  <label 
+
+    for="service" 
+
+    class="block text-white text-lg font-semibold mb-3">
+
+    Service Needed
+
+  </label>
+
+
+
+  <select 
+
+    id="service" 
+
+    name="service" 
+
+    required
+
+    class="w-full px-6 py-5 bg-white/10 text-white placeholder-gray-300 border border-white/20 rounded-2xl backdrop-blur-sm
+
+           focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/40
+
+           transition duration-300 ease-in-out text-lg hover:bg-white/20">
+
+           
+
+    <option value="" disabled selected class="text-gray-400">Select a service</option>
+
+    <option value="web-dev" class="text-black">Website Development</option>
+
+    <option value="mern" class="text-black">MERN Stack Development</option>
+
+    <option value="ecommerce" class="text-black">E-commerce Website</option>
+
+    <option value="design" class="text-black">Graphic Design</option>
+
+    <option value="ai" class="text-black">AI Development</option>
+
+    <option value="marketing" class="text-black">Digital Marketing</option>
+
+    <option value="other" class="text-black">Other Services</option>
+
+  </select>
+
+</div>
+
+
+
+                            <div>
+
+                                <label class="block text-white text-lg font-semibold mb-3">Project Details</label>
+
+                                <textarea rows="6" name="projectDetails" required placeholder="Tell us about your project, goals, timeline, and how we can help bring your vision to life..." class="w-full px-6 py-5 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-300 focus:outline-none focus:border-white/40 transition-colors resize-none text-lg"></textarea>
+
+                            </div>
+
+                            <button type="submit" class="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 text-white py-5 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-500 animate-pulse-glow transform hover:scale-105">
+
+                                Send Message
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-gradient-to-br from-black via-gray-900 to-blue-900 text-white py-16 relative overflow-hidden">
+
+        <!-- Background Elements -->
+
+        <div class="absolute inset-0 opacity-10">
+
+            <div class="absolute top-10 left-10 w-64 h-64 bg-gradient-to-r from-yellow-400/20 to-blue-500/20 rounded-full blur-3xl animate-float"></div>
+
+            <div class="absolute bottom-10 right-10 w-48 h-48 bg-gradient-to-r from-blue-500/15 to-white/10 rounded-full blur-3xl animate-float" style="animation-delay: 3s;"></div>
+
+        </div>
+
+        
+
+        <div class="max-w-7xl mx-auto container-spacing relative z-10">
+
+            <div class="grid md:grid-cols-3 gap-16 mb-16">
+
+                <!-- Company Info -->
+
+                <div class="animate-on-scroll">
+
+                    <button onclick="showPage('home')" class="flex items-center mb-8 hover:scale-105 transition-transform duration-300 cursor-pointer group">
+
+                        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg border-2 border-black group-hover:shadow-xl transition-all duration-300">
+
+                            <span class="text-black font-black text-2xl">O</span>
+
+                        </div>
+
+                        <div class="ml-4">
+
+                            <span class="text-base sm:text-lg md:text-xl lg:text-3xl font-black text-white">Oryntecore</span>
+
+                            <p class="text-sm text-gray-300 font-medium">Digital Innovation Agency</p>
+
+                        </div>
+
+                    </button>
+
+                    <p class="text-gray-300 mb-8 leading-relaxed text-lg">
+
+                        Transforming ideas into digital excellence through innovation, technology, and commitment.
+
+                    </p>
+
+                    
+
+                    <!-- Social Media Icons -->
+
+                    <div class="flex space-x-4">
+
+                        <button class="w-10 h-10 rounded-xl flex items-center justify-center text-blue-400 hover:text-white hover:bg-blue-500 transition-all duration-300">
+
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+
+                            </svg>
+
+                        </button>
+
+                        
+
+                        <button class="w-10 h-10 rounded-xl flex items-center justify-center text-blue-500 hover:text-white hover:bg-blue-600 transition-all duration-300">
+
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+
+                            </svg>
+
+                        </button>
+
+                        
+
+                        <button class="w-10 h-10 rounded-xl flex items-center justify-center text-yellow-400 hover:text-black hover:bg-yellow-400 transition-all duration-300">
+
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+
+                            </svg>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                
+
+                <!-- Quick Links -->
+
+                <div class="animate-on-scroll" style="animation-delay: 0.1s;">
+
+                    <h4 class="text-2xl font-black gradient-text mb-8">Quick Links</h4>
+
+                    <ul class="space-y-4">
+
+                        <li><button onclick="showPage('services')" class="text-gray-300 hover:text-yellow-400 transition-colors font-semibold text-lg">Services</button></li>
+
+                        <li><button onclick="showPage('about')" class="text-gray-300 hover:text-yellow-400 transition-colors font-semibold text-lg">About Us</button></li>
+
+                        <li><button onclick="showPage('portfolio')" class="text-gray-300 hover:text-yellow-400 transition-colors font-semibold text-lg">Portfolio</button></li>
+
+                        <li><button onclick="showPage('contact')" class="text-gray-300 hover:text-yellow-400 transition-colors font-semibold text-lg">Contact</button></li>
+
+                    </ul>
+
+                </div>
+
+                
+
+                <!-- Contact Info -->
+
+                <div class="animate-on-scroll" style="animation-delay: 0.2s;">
+
+                    <h4 class="text-2xl font-black gradient-text mb-8">Get In Touch</h4>
+
+                    <div class="space-y-4">
+
+                        <div class="flex items-center">
+
+                            <div class="w-10 h-10 bg-yellow-400/20 rounded-xl flex items-center justify-center mr-4">
+
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+
+                                <p class="text-white font-semibold">info.oryntecore@gmail.com</p>
+
+                                <p class="text-gray-400 text-sm">24/7 Support</p>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="flex items-center">
+
+                            <div class="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center mr-4">
+
+                                <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+
+                                <p class="text-white font-semibold">+92 3319991156</p>
+
+                                <p class="text-gray-400 text-sm">Mon 10AM-7PM</p>
+
+                                <p class="text-gray-400 text-sm">Tue 10AM-7PM</p>
+
+                                <p class="text-gray-400 text-sm">Wed 10AM-7PM</p>
+
+                                <p class="text-gray-400 text-sm">Thu 10AM-7PM</p>
+
+                                <p class="text-gray-400 text-sm">Fri, 2PM-9PM</p>
+
+                                <p class="text-gray-400 text-sm">Sat, 12PM-7PM</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <!-- Bottom Section -->
+
+            <div class="border-t border-gray-700 pt-8">
+
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+
+                    <div class="flex items-center space-x-4">
+
+                        <p class="text-gray-300 font-medium">
+
+                            &copy; 2024 Oryntecore. All rights reserved.
+
+                        </p>
+
+                        <div class="flex items-center space-x-2">
+
+                            <span class="text-yellow-400 animate-pulse">⚡</span>
+
+                            <span class="text-gray-400 text-sm">Built with innovation</span>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="flex space-x-6 text-gray-400 text-sm">
+
+                        <button class="hover:text-white transition-colors">Privacy</button>
+
+                        <button class="hover:text-white transition-colors">Terms</button>
+
+                        <button class="hover:text-white transition-colors">Cookies</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+
+        // Mobile menu toggle function
+
+        function toggleMobileMenu() {
+
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            if (mobileMenu.classList.contains('hidden')) {
+
+                mobileMenu.classList.remove('hidden');
+
+                mobileMenu.style.animation = 'fadeInUp 0.3s ease forwards';
+
+            } else {
+
+                mobileMenu.style.animation = 'fadeOut 0.3s ease forwards';
+
+                setTimeout(() => {
+
+                    mobileMenu.classList.add('hidden');
+
+                }, 300);
+
+            }
+
+        }
+
+
+
+        // Enhanced page navigation system
+
+        function showPage(pageId) {
+
+            // Hide all pages immediately with proper cleanup
+
+            document.querySelectorAll('.page').forEach(page => {
+
+                page.classList.remove('active');
+
+                page.style.display = 'none';
+
+                // Clear any duplicate content
+
+                page.style.visibility = 'hidden';
+
+            });
+
+            
+
+            // Show selected page immediately
+
+            const targetPage = document.getElementById(pageId);
+
+            if (targetPage) {
+
+                targetPage.classList.add('active');
+
+                targetPage.style.display = 'block';
+
+                targetPage.style.visibility = 'visible';
+
+            }
+
+            
+
+            // Update navigation active state
+
+            document.querySelectorAll('.page-nav').forEach(nav => {
+
+                nav.classList.remove('active');
+
+            });
+
+            
+
+            // Set active navigation
+
+            const activeNav = document.querySelector(`[onclick="showPage('${pageId}')"].page-nav`);
+
+            if (activeNav) {
+
+                activeNav.classList.add('active');
+
+            }
+
+            
+
+            // Smooth scroll to top
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            
+
+            // Re-trigger animations for the new page
+
+            setTimeout(() => {
+
+                const newPageElements = document.querySelectorAll(`#${pageId} .animate-on-scroll`);
+
+                newPageElements.forEach((el, index) => {
+
+                    el.classList.remove('visible');
+
+                    setTimeout(() => {
+
+                        el.classList.add('visible');
+
+                    }, index * 100);
+
+                });
+
+            }, 100);
+
+        }
+
+
+
+        // Enhanced viewport detection
+
+        function isElementInViewport(el) {
+
+            const rect = el.getBoundingClientRect();
+
+            return (
+
+                rect.top >= 0 &&
+
+                rect.left >= 0 &&
+
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+            );
+
+        }
+
+
+
+        // Advanced scroll animations with Intersection Observer
+
+        const observerOptions = {
+
+            threshold: 0.1,
+
+            rootMargin: '0px 0px -50px 0px'
+
+        };
+
+
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach((entry, index) => {
+
+                if (entry.isIntersecting) {
+
+                    setTimeout(() => {
+
+                        entry.target.classList.add('visible');
+
+                    }, index * 100);
+
+                }
+
+            });
+
+        }, observerOptions);
+
+
+
+        // Observe all animate-on-scroll elements
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+
+            observer.observe(el);
+
+        });
+
+
+
+        // Enhanced form handling with email notification
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const contactForm = document.getElementById('contactForm');
+
+            
+
+            if (contactForm) {
+
+                contactForm.addEventListener('submit', async function(e) {
+
+                    e.preventDefault();
+
+                    
+
+                    // Get form data
+
+                    const formData = new FormData(this);
+
+                    const submitButton = this.querySelector('button[type="submit"]');
+
+                    const inputs = this.querySelectorAll('input, textarea, select');
+
+                    
+
+                    // Enhanced validation
+
+                    let isValid = true;
+
+                    inputs.forEach(input => {
+
+                        if (input.hasAttribute('required')) {
+                            if (!input.value.trim()) {
+
+                                input.style.borderColor = '#ef4444';
+
+                                input.style.boxShadow = '0 0 0 3px rgba(239, 68, 68, 0.1)';
+
+                                isValid = false;
+
+                            } else {
+
+                                input.style.borderColor = '';
+
+                                input.style.boxShadow = '';
+
+                            }
+
+                        }
+
+                    });
+
+                    
+
+                    if (!isValid) {
+
+                        let errorMsg = this.querySelector('.error-message');
+
+                        if (!errorMsg) {
+
+                            errorMsg = document.createElement('div');
+
+                            errorMsg.className = 'error-message text-red-400 text-lg mt-4 p-4 bg-red-100/10 rounded-xl border border-red-400/20';
+
+                            submitButton.parentNode.insertBefore(errorMsg, submitButton);
+
+                        }
+
+                        errorMsg.textContent = 'Please fill in all required fields correctly.';
+
+                        return;
+
+                    }
+
+                    
+
+                    // Remove error message
+
+                    const errorMsg = this.querySelector('.error-message');
+
+                    if (errorMsg) {
+
+                        errorMsg.remove();
+
+                    }
+
+                    
+
+                    // Enhanced loading state
+
+                    const originalText = submitButton.textContent;
+
+                    submitButton.innerHTML = '<span class="animate-pulse">Sending...</span>';
+
+                    submitButton.disabled = true;
+
+                    submitButton.classList.add('opacity-75', 'cursor-not-allowed');
+
+                    
+
+                    try {
+
+                        // Prepare email data
+
+                        const emailData = {
+
+                            to: 'info.oryntecore@gmail.com',
+
+                            subject: `New Contact Form Submission - ${formData.get('service')}`,
+
+                            html: `
+
+                                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px;">
+
+                                    <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+
+                                        <h2 style="color: #333; margin-bottom: 20px; text-align: center; font-size: 28px;">🚀 New Project Inquiry</h2>
+
+                                        
+
+                                        <div style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+
+                                            <h3 style="color: white; margin: 0; font-size: 20px;">Client Information</h3>
+
+                                        </div>
+
+                                        
+
+                                        <div style="margin-bottom: 15px;">
+
+                                            <strong style="color: #3b82f6;">👤 Full Name:</strong>
+
+                                            <span style="margin-left: 10px; font-size: 16px;">${formData.get('fullName')}</span>
+
+                                        </div>
+
+                                        
+
+                                        <div style="margin-bottom: 15px;">
+
+                                            <strong style="color: #8b5cf6;">📧 Email:</strong>
+
+                                            <span style="margin-left: 10px; font-size: 16px;">${formData.get('email')}</span>
+
+                                        </div>
+
+                                        
+
+                                        <div style="margin-bottom: 15px;">
+
+                                            <strong style="color: #ef4444;">🎯 Service Needed:</strong>
+
+                                            <span style="margin-left: 10px; font-size: 16px; background: #f3f4f6; padding: 5px 10px; border-radius: 5px;">${formData.get('service')}</span>
+
+                                        </div>
+
+                                        
+
+                                        <div style="background: linear-gradient(135deg, #10b981, #059669); padding: 20px; border-radius: 8px; margin: 20px 0;">
+
+                                            <h4 style="color: white; margin: 0 0 10px 0;">📝 Project Details:</h4>
+
+                                            <p style="color: white; margin: 0; line-height: 1.6; font-size: 15px;">${formData.get('projectDetails')}</p>
+
+                                        </div>
+
+                                        
+
+                                        <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f8fafc; border-radius: 8px;">
+
+                                            <p style="margin: 0; color: #64748b; font-size: 14px;">
+
+                                                📅 Received: ${new Date().toLocaleString()}<br>
+
+                                                🌐 From: Oryntecore Contact Form
+
+                                            </p>
+
+                                        </div>
+
+                                        
+
+                                        <div style="text-align: center; margin-top: 20px;">
+
+                                            <a href="mailto:${formData.get('email')}" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">
+
+                                                Reply to Client
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            `
+
+                        };
+
+                        
+
+                        await emailjs.send("service_23pads1", "template_0ooak4n", {
+    from_name: formData.get('fullName'),
+    from_email: formData.get('email'),
+    service: formData.get('service'),
+    projectDetails: formData.get('projectDetails'),
+    reply_to: formData.get('email'),
+    to_email: 'info.oryntecore@gmail.com'
+  });
+
+                        await new Promise(resolve => setTimeout(resolve, 2000));
+
+                        // Success state
+
+                        submitButton.innerHTML = 'Message Sent Successfully! ✓';
+
+                        submitButton.classList.remove('opacity-75', 'cursor-not-allowed');
+
+                        submitButton.classList.add('bg-green-600');
+
+                        
+
+                        // Reset form
+
+                        this.reset();
+
+                        
+
+                        // Enhanced success message
+
+                        const successMsg = document.createElement('div');
+
+                        successMsg.className = 'success-message text-green-400 text-lg mt-4 p-4 bg-green-100/10 rounded-xl border border-green-400/20';
+
+                        successMsg.innerHTML = `
+
+                            <div class="flex items-center">
+
+                                <span class="text-2xl mr-3">🎉</span>
+
+                                <div>
+
+                                    <p class="font-bold mb-1">Message sent successfully!</p>
+
+                                    <p class="text-sm text-green-300">We've received your inquiry and will respond within 24 hours with a detailed proposal.</p>
+
+                                </div>
+
+                            </div>
+
+                        `;
+
+                        submitButton.parentNode.insertBefore(successMsg, submitButton.nextSibling);
+
+                        
+
+                        // Reset button after delay
+
+                        setTimeout(() => {
+
+                            submitButton.textContent = originalText;
+
+                            submitButton.disabled = false;
+
+                            submitButton.classList.remove('bg-green-600');
+
+                            if (successMsg) {
+
+                                successMsg.remove();
+
+                            }
+
+                        }, 8000);
+
+                        
+
+                    } catch (error) {
+
+                        console.error('Error sending email:', error);
+
+                        
+
+                        // Error state
+
+                        submitButton.innerHTML = 'Failed to Send - Try Again';
+
+                        submitButton.classList.remove('opacity-75', 'cursor-not-allowed');
+
+                        submitButton.classList.add('bg-red-600');
+
+                        
+
+                        const errorMsg = document.createElement('div');
+
+                        errorMsg.className = 'error-message text-red-400 text-lg mt-4 p-4 bg-red-100/10 rounded-xl border border-red-400/20';
+
+                        errorMsg.innerHTML = '❌ Failed to send message. Please try again or contact us directly at info.oryntecore@gmail.com';
+
+                        submitButton.parentNode.insertBefore(errorMsg, submitButton.nextSibling);
+
+                        
+
+                        setTimeout(() => {
+
+                            submitButton.textContent = originalText;
+
+                            submitButton.disabled = false;
+
+                            submitButton.classList.remove('bg-red-600');
+
+                            if (errorMsg) {
+
+                                errorMsg.remove();
+
+                            }
+
+                        }, 5000);
+
+                    }
+
+                });
+
+            }
+
+            
+
+            // Handle other forms (like newsletter)
+
+            const otherForms = document.querySelectorAll('form:not(#contactForm)');
+
+            otherForms.forEach(form => {
+
+                form.addEventListener('submit', function(e) {
+
+                    e.preventDefault();
+
+                    
+
+                    const submitButton = this.querySelector('button[type="submit"]');
+
+                    const originalText = submitButton.textContent;
+
+                    
+
+                    submitButton.innerHTML = '<span class="animate-pulse">Processing...</span>';
+
+                    submitButton.disabled = true;
+
+                    
+
+                    setTimeout(() => {
+
+                        submitButton.innerHTML = 'Subscribed! ✓';
+
+                        submitButton.classList.add('bg-green-600');
+
+                        this.reset();
+
+                        
+
+                        setTimeout(() => {
+
+                            submitButton.textContent = originalText;
+
+                            submitButton.disabled = false;
+
+                            submitButton.classList.remove('bg-green-600');
+
+                        }, 3000);
+
+                    }, 1500);
+
+                });
+
+            });
+
+        });
+
+
+
+        // Enhanced page load animations
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Smooth page entrance
+
+            document.body.style.opacity = '1';
+
+            
+
+            // Initialize home page animations with staggered delays
+
+            setTimeout(() => {
+
+                const homeElements = document.querySelectorAll('#home .animate-on-scroll');
+
+                homeElements.forEach((el, index) => {
+
+                    setTimeout(() => {
+
+                        el.classList.add('visible');
+
+                    }, index * 200);
+
+                });
+
+            }, 500);
+
+        });
+
+
+
+        // Performance optimizations
+
+        document.body.style.opacity = '0';
+
+        document.body.style.transition = 'opacity 0.5s ease';
+
+
+
+        // Enhanced keyboard navigation
+
+        document.addEventListener('keydown', function(e) {
+
+            if (e.key === 'Escape') {
+
+                // Close any open elements
+
+                const openElements = document.querySelectorAll('.mobile-menu:not(.hidden)');
+
+                openElements.forEach(el => el.classList.add('hidden'));
+
+            }
+
+        });
+
+
+
+        // Smooth scrolling for internal links
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener('click', function (e) {
+
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+
+                if (target) {
+
+                    target.scrollIntoView({
+
+                        behavior: 'smooth',
+
+                        block: 'start'
+
+                    });
+
+                }
+
+            });
+
+        });
+
+
+
+        // Enhanced animation performance
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        if (reduceMotion.matches) {
+
+            document.documentElement.style.setProperty('--animation-duration', '0.01s');
+
+        }
+
+    </script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'979d45efe6dcd051',t:'MTc1Njk4NjY2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+
+
+
+
+</html>

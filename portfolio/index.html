@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oryntecore Portfolio</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="font-sans   text-gray-900 ">
+
+
+
+ 
+
+<nav class="bg-blue-500 fixed w-full z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+    <!-- Logo -->
+    <a href="" class="text-3xl font-bold flex items-center space-x-1">
+      <span class="text-white">Oryn</span><span class="text-yellow-400">Tecore</span>
+    </a>
+
+    <!-- Desktop Links -->
+    <div class="hidden md:flex space-x-6 text-white">
+      
+      <a href="index.html" class="hover:text-gray-200">Home</a>
+      <a href="#services" class="hover:text-gray-200">Services</a>
+      <a href="#team" class="hover:text-gray-200">Team</a>
+      <a href="#contact" class="hover:text-gray-200">Contact</a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col bg-blue-600 text-white px-4 pb-4 space-y-2">
+    <a href="index.html" class="hover:text-gray-200">Home</a>
+      <a href="#services" class="hover:text-gray-200">Services</a>
+      <a href="#team" class="hover:text-gray-200">Team</a>
+      <a href="#contact" class="hover:text-gray-200">Contact</a>
+</nav>
+  
+ 
+
+
+
+<section class="relative bg-gradient-to-b from-gray-50 to-white py-24 flex flex-col items-center text-center overflow-hidden">
+  <div class="container mx-auto px-6 py-8 text-center">
+    
+    <!-- Badge / Tagline -->
+    <div class="mb-6">
+      <span class="px-5 py-2 rounded-full bg-yellow-100 text-yellow-700 text-sm font-medium tracking-wide border border-yellow-200">
+        🎨 Creative Agency • Portfolio • Innovation
+      </span>
+    </div>
+
+    <!-- Main Heading -->
+    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-8 text-gray-900">
+      <span class="text-black px-6 py-6 rounded-xl">Transform</span> 
+      <span class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">Ideas</span> 
+      <br>
+      <span class="text-black   px-3 py-1 rounded-lg">Into Bold</span> 
+      <span class="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">Designs</span>
+    </h1>
+
+    <!-- Subheading -->
+    <p class="mt-6 text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
+      A passionate team of designers turning visions into <span class="font-semibold text-gray-900">stunning visuals</span>.  
+      From branding to digital experiences, we craft designs that truly connect.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="mt-8 flex flex-col sm:flex-row gap-5 justify-center items-center">
+      <a href="#plans" class="px-8 py-4 rounded-lg font-semibold border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition">
+        Get Started
+      </a>
+      <a href="#services" class="bg-gradient-to-r from-yellow-400 to-pink-500 px-8 py-4 rounded-lg font-semibold shadow-lg hover:opacity-90 transition text-white"> 
+        Explore Services
+      </a>
+    </div>
+  </div>
+
+ 
+</section>
+
+
+  
+  
+
+  
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+
+
+<!-- About Section -->
+<section id="about" class="py-20 px-4 bg-[url('')] bg-cover bg-center bg-no-repeat">
+  <div class="container mx-auto">
+    <h2 class="text-4xl sm:text-5xl font-bold mb-8 text-blue-800 text-center">About Us</h2>
+    <div class="flex flex-col lg:grid lg:grid-cols-2 gap-10 items-center">
+      <div class="w-full">
+        <img src="assets/Aboutme.jpg" alt="Team" class="w-full h-auto rounded-lg">
+      </div>
+      <div class="text-center lg:text-left mt-6 lg:mt-0">
+        <p class="mb-4 text-black-700 leading-relaxed">
+          At Oryntecore, we are a dynamic team of creative and technical professionals committed to providing innovative solutions for your business. From web development to UI/UX design, our goal is to help your brand grow and succeed in the digital world.
+        </p>
+        <h3 class="text-blue-500 text-2xl font-semibold mt-4">Our Mission</h3>
+        <p class="mb-4 text-black-700">Game-changing software solutions that break traditional development boundaries...</p>
+
+        <h3 class="text-blue-500 text-2xl font-semibold mt-4">Our Vision</h3>
+        <p class="mb-4 text-black-700">Evolve into a globally recognized software house known for innovation and excellence.</p>
+
+        <h3 class="text-blue-500 text-2xl font-semibold mt-4 mb-1">Our Core Values</h3>
+        <ul class="text-black-700 list-disc list-inside space-y-1">
+          <li><b>Innovation:</b> Constantly striving for creative solutions.</li>
+          <li><b>Integrity:</b> Building transparent and trustworthy relationships.</li>
+          <li><b>Excellence:</b> Delivering high-quality results.</li>
+          <li><b>Collaboration:</b> Working together for success.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<!-- Services Section -->
+<section id="services" class="bg-white py-20 px-4">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl sm:text-5xl font-bold mb-8 text-blue-800">Our Services</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="bg-white p-6 rounded-xl shadow-lg flex items-center space-x-4 hover:shadow-xl transition">
+        <div class="text-blue-600 text-3xl p-4 bg-blue-100 rounded-full">
+          <i class="fa-solid fa-paintbrush"></i>
+        </div>
+        <div>
+          <h3 class="text-yellow-500 text-lg font-bold">UI/UX Design</h3>
+          <p class="text-gray-600 text-sm">Crafting seamless and engaging user experiences.</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-lg flex items-center space-x-4 hover:shadow-xl transition">
+        <div class="text-blue-600 text-3xl p-4 bg-blue-100 rounded-full">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div>
+          <h3 class="text-yellow-500 text-lg font-bold">Web Development</h3>
+          <p class="text-gray-600 text-sm">Building dynamic and high-performing websites.</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-lg flex items-center space-x-4 hover:shadow-xl transition">
+        <div class="text-blue-600 text-3xl p-4 bg-blue-100 rounded-full">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+        </div>
+        <div>
+          <h3 class="text-yellow-500 text-lg font-bold">App Development</h3>
+          <p class="text-gray-600 text-sm">Designing intuitive and visually appealing mobile apps.</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-lg flex items-center space-x-4 hover:shadow-xl transition">
+        <div class="text-blue-600 text-3xl p-4 bg-blue-100 rounded-full">
+          <i class="fa-solid fa-palette"></i>
+        </div>
+        <div>
+          <h3 class="text-yellow-500 text-lg font-bold">Graphic Design</h3>
+          <p class="text-gray-600 text-sm">Delivering stunning visuals and brand identities.</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-lg flex items-center space-x-4 hover:shadow-xl transition">
+        <div class="text-blue-600 text-3xl p-4 bg-blue-100 rounded-full">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <div>
+          <h3 class="text-yellow-500 text-lg font-bold">AI/ML Solutions</h3>
+          <p class="text-gray-600 text-sm">Implementing intelligent solutions for automation.</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-lg flex items-center space-x-4 hover:shadow-xl transition">
+        <div class="text-blue-600 text-3xl p-4 bg-blue-100 rounded-full">
+          <i class="fa-solid fa-gamepad"></i>
+        </div>
+        <div>
+          <h3 class="text-yellow-500 text-lg font-bold">Game Development</h3>
+          <p class="text-gray-600 text-sm">Creating immersive gaming experiences.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+    
+ <!-- Pricing Section -->
+  <section id="plans" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-blue-800">Our Pricing Packages</h2>
+      <p class="mt-4 text-gray-400">Choose the perfect plan that fits your business needs.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+
+        <!-- Box 1 -->
+      
+          <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-transparent  hover:border-blue-600 transition duration-300">
+            <h3 class="text-xl font-bold text-black-800">Basic</h3>
+            <p class="text-gray-400 mt-2">Ideal for startups & individuals</p>
+            <p class="text-2xl font-bold mt-4">$299</p>
+            <div class="flex justify-center">
+              
+          <ul class="mt-4 text-gray-600 text-sm space-y-2">
+          <li class="flex items-start space-x-2">
+          <span class="flex-shrink-0">✅</span>
+           <span>Basic Web Design</span>
+          </li>
+          <li class="flex items-start space-x-2">
+           <span class="flex-shrink-0">✅</span>
+           <span>5 Pages Website</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>Standard UI/UX</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>24/7 Support</span>
+  </li>
+</ul>
+</div>
+             <a href="#contacts">
+              <div class="mt-6 bg-yellow-500 text-white px-6 py-2 rounded-lg w-full text-center">Get Started</div></a>
+          </div>
+        
+
+        <!-- Box 2 -->
+       
+          <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-transparent  hover:border-blue-600 transition duration-300">
+            <h3 class="text-xl font-bold text-black-800">Standard</h3>
+            <p class="text-gray-400 mt-2">For growing businesses</p>
+            <p class="text-2xl font-bold mt-4">$599</p>
+            <div class="flex justify-center">
+           <ul class="mt-4 text-gray-600 text-sm space-y-2">
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>Custom Web Design</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>10 Pages Website</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>Advanced UI/UX</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>SEO Optimization</span>
+  </li>
+</ul>
+</div>
+            <a href="#contacts">
+              <div class="mt-6 bg-yellow-500 text-white px-6 py-2 rounded-lg w-full text-center">Get Started</div></a>
+            
+          </div>
+        
+
+        <!-- Box 3 (Highlighted) -->
+       
+          <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-blue-600 hover:shadow-xl transition">
+            <h3 class="text-xl font-bold text-gray-800">Premium</h3>
+            <p class="text-gray-400 mt-2">Best for established companies</p>
+            <p class="text-2xl font-bold mt-4">$999</p>
+            <ul class="mt-4 text-gray-600 text-sm space-y-2">
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>Fully Custom Website</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>20 Pages Design</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>Premium animation</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>SEO Optimization</span>
+  </li>
+</ul>
+
+             <a href="#contacts">
+              <div class="mt-6 bg-yellow-500 text-white px-6 py-2 rounded-lg w-full text-center">Get Started</div></a>
+          </div>
+       
+
+        <!-- Box 4 -->
+        
+          <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-transparent  hover:border-blue-600 transition duration-300">
+            <h3 class="text-xl font-bold text-black-800">Enterprise</h3>
+            <p class="text-gray-400 mt-2">For large-scale projects</p>
+            <p class="text-2xl font-bold mt-4">Custom Pricing</p>
+          <ul class="mt-4 text-gray-600 text-sm space-y-2">
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>Custom Web & App Solutions</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>AI & Cloud Integrations</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>Security & Maintenance</span>
+  </li>
+  <li class="flex items-start space-x-2">
+    <span class="flex-shrink-0">✅</span>
+    <span>Team Support & Maintenance</span>
+  </li>
+</ul>
+
+            <a href="#contacts">
+              <div class="mt-6 bg-yellow-500 text-white px-6 py-2 rounded-lg w-full text-center">Get Started</div></a>
+          </div>
+       
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Form Section -->
+  <!-- <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6 max-w-lg">
+      <h2 class="text-4xl font-bold text-gray-800 text-center">Contact for Consultation</h2>
+      <p class="mt-4 text-gray-600 text-center">Get in touch with us for expert advice.</p>
+
+      <form id="consultForm" action="/endpoint" method="POSTx" class="mt-8 bg-gray-100 p-6 rounded-2xl shadow-md">
+        <input type="hidden" id="selectedPlan" name="selectedPlan">
+
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold" for="name">Full Name</label>
+          <input type="text" id="name" name="name" class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold" for="email">Email Address</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold" for="message">Message</label>
+          <textarea id="message" name="message" class="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white px-6 py-2 rounded-lg">Submit</button>
+      </form>
+    </div>
+  </section> -->
+
+  <!-- JavaScript for pre-fill & submission -->
+  <script>
+    // Auto-fill selected plan
+    document.querySelectorAll('.plan-link').forEach(link => {
+      link.addEventListener('click', function () {
+        const selectedPlan = this.getAttribute('data-plan');
+        setTimeout(() => {
+          document.getElementById('selectedPlan').value = selectedPlan;
+        }, 500);
+      });
+    });
+
+    // Handle form submission
+    document.getElementById('consultForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const selectedPlan = document.getElementById('selectedPlan').value;
+
+      const response = await fetch('#', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message, selectedPlan })
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        alert('Form submitted successfully!');
+        document.getElementById('consultForm').reset();
+      } else {
+        alert('Submission failed. Try again later.');
+      }
+    });
+  </script>
+  <script>
+  let selectedPlan = "";
+
+  document.querySelectorAll("[data-plan]").forEach((card) => {
+    card.addEventListener("click", () => {
+      selectedPlan = card.getAttribute("data-plan");
+      document.getElementById("form").scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  document.getElementById("form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    try {
+      const res = await fetch("#", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message, selectedPlan }),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        alert("Form submitted successfully!");
+        document.getElementById("form").reset();
+      }
+    } catch (err) {
+      alert("Error submitting form. Please try again.");
+      console.error(err);
+    }
+  });
+</script>
+
+
+<!-- Alpine.js for toggling (only 5 KB, no installation needed) -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<section id="team" class="px-4 sm:px-8 md:px-16 lg:px-32 py-12 bg-gray-50">
+  <!-- Section Title -->
+  <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">Meet Our Team</h2>
+  <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+    At WGTecSol, we believe in teamwork, innovation, and real-time problem-solving. Get to know the minds behind our creative solutions.
+  </p>
+
+  <!-- ==================== FOUNDERS ==================== -->
+  <h3 class="text-3xl font-bold mb-4 text-center text-yellow-600">Founders</h3>
+  <div class="flex flex-wrap justify-center gap-8 mb-12">
+   
+
+    <!-- Zabir -->
+    <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-yellow-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Zabir Uddin</h3>
+      <div class="flex justify-center">
+        <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+      </div>
+      <p class="text-gray-400 mt-2">Founder / WebApp Designer</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Manages frontend technologies and creative direction.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CO-FOUNDERS ==================== -->
+  <h3 class="text-3xl font-bold mb-4 text-center text-blue-600">Co-Founders & Directors</h3>
+  <div class="flex flex-wrap justify-center gap-8 mb-12">
+    <!-- Jannat -->
+    <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Jannat Mughal</h3>
+      <div class="flex justify-center">
+        <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+      </div>
+      <p class="text-gray-400 mt-2">Co-founder / Front-end Developer</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Manages frontend development and team coordination.</p>
+      </div>
+    </div>
+
+    <!-- Javeria -->
+    <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Javeria Arif</h3>
+      <div class="flex justify-center">
+        <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+      </div>
+      <p class="text-gray-400 mt-2">Co-Founder / Senior MERN Stack Dev</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Expert in handling both backend and frontend tasks with MERN stack.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TEAM MEMBERS ==================== -->
+  <h3 class="text-3xl font-bold mb-8 text-center text-gray-700">Team Members</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Maria -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Maria Hameed</h3>
+      <p class="text-gray-400 mt-2">Graphic Designer</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Specializes in creating stunning visual designs and brand identities.</p>
+      </div>
+    </div>
+
+    <!-- Tayyaba -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Tayyaba</h3>
+      <p class="text-gray-400 mt-2">UIUX Designer</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Enhances user experience through user-centric design strategies.</p>
+      </div>
+    </div>
+
+    <!-- Bharti -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Bharti</h3>
+      <p class="text-gray-400 mt-2">Backend Dev</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Focuses on building robust backend system</p>
+      </div>
+    </div>
+
+    <!-- Anas -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Anas</h3>
+      <p class="text-gray-400 mt-2">Backend Developer</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <ps>Focuses on building robust backend system and databases.</p>
+      </div>
+    </div>
+
+    <!-- Junaid -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Junaid</h3>
+      <p class="text-gray-400 mt-2">wordpress Dev</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Skilled in building dynamic web wordpress</p>
+      </div>
+    </div>
+
+    <!-- Aimal -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Aimal</h3>
+      <p class="text-gray-400 mt-2">Graphic Designer Intern </p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Creative and detail-oriented, Aimal brings fresh ideas and innovative designs to our team. Passionate about visual storytelling.</p>
+      </div>
+    </div>
+
+    <!-- Kainat -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Kainat Fatima</h3>
+      <p class="text-gray-400 mt-2">Graphic Designer Intern</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Creates creative, clean, and professional brand and social media designs.</p>
+      </div>
+    </div>
+
+    <!-- Rasekh -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Rasekh Ali</h3>
+      <p class="text-gray-400 mt-2">Cyber Security Expert</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>sekh is dedicated to safeguarding digital systems with advanced cybersecurity practices. With strong expertise in threat detection, prevention, and risk management, he ensures data protection and secure operations.</p>
+      </div>
+    </div>
+
+    <!-- Tania -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Tania</h3>
+      <p class="text-gray-400 mt-2">Marketing Manager</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Leads digital marketing efforts and strengthens Oryntecore's online presence.</p>
+      </div>
+    </div>
+
+    <!-- Hira -->
+    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Hira</h3>
+      <p class="text-gray-400 mt-2">UI/UX Designer</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Designs seamless user experiences with intuitive and modern interfaces.</p>
+      </div>
+    </div>
+
+     <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Tooba</h3>
+      <p class="text-gray-400 mt-2">MERN Stack Developer</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Builds dynamic full-stack web applications using MongoDB, Express, React, and Node.js.</p>
+      </div>
+    </div>
+
+     <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Muhammad Shah</h3>
+      <p class="text-gray-400 mt-2">App Developer</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Develops high-performance mobile applications with a focus on user experience and cross-platform functionality.</p>
+      </div>
+    </div>
+
+   
+
+     <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Aiza</h3>
+      <p class="text-gray-400 mt-2">Mernstack dev</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Develops high-performance mobile applications with a focus on user experience and cross-platform functionality.</p>
+      </div>
+    </div>
+
+     <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Saleha Amin</h3>
+      <p class="text-gray-400 mt-2">Graphic Designer</p>
+      <div x-show="open" x-transition class="mt-4 text-gray-600">
+        <p>Creates visually compelling designs that enhance brand identity and engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-5xl font-bold mb-8 text-blue-800">Work Samples</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="assets/Netflix-Clone-01.png " alt="Project 1" class="w-full h-auto rounded-lg mb-4">
+          <h3 class="text-xl font-semibold"><a href="">Netflix Clone</a></h3>
+          <p class="text-gray-400"> A fully responsive streaming platform replica featuring dynamic UI.</p>
+
+
+
+
+        </div> -->
+        
+        <!-- <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="assets/Aureum-Dining-02-17-2025_07_06_PM.png" alt="Project 1" class="w-full h-auto rounded-lg mb-4">
+          <h3 class="text-xl font-semibold"><a href="">Aureum-Dining</a></h3>
+          <p class="text-gray-400">A modern and visually appealing restaurant website.</p>
+      
+        </div> -->
+
+        <div class="relative  p-6 rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/pro5.png" alt="Project 1" class="w-full h-45 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold"><a href="https://ziaway.ca/">Ziaway</a></h3>
+         <p class="text-gray-400">A travel and tourism based website.</p>
+          
+        
+          
+        </div>
+        
+        
+
+        <div class="relative  p-6 rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/pro4.png" alt="Project 1" class="w-full h-45 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold"><a href="https://rently.pk/">Rently</a></h3>
+          <p class="text-gray-400">A travel and tourism based website.</p>
+         
+        
+        
+        </div>
+        <div class="relative  p-6 rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/pro7.png" alt="Project 1" class="w-full h-50 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold"><a href="https://pro.whales.market/">Whales Market</a></h3>
+         <p class="text-gray-400">Trading webiste.</p>
+          
+        
+          
+        
+        <!-- Repeat for other projects -->
+      </div>
+
+      <div class="relative  p-6 rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/Car-Rental-Services-Karachi-Rent-A-Car-with-Driver-Karachi-05-27-2025_08_55_PM.png" alt="Project 1" class="w-full h-50 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold"><a href="https://carrentalservices.pk/">Car Rental Services</a></h3>
+         <p class="text-gray-400">Luxury car rentals.</p>
+          
+        
+          
+        
+        <!-- Repeat for other projects -->
+      </div>
+
+      <div class="relative  p-6 rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/Save-On-a-Premium-SUV-Rental-Avis-Rent-a-Car-05-27-2025_08_56_PM.png" alt="Project 1" class="w-full h-50 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold"><a href="https://www.avis.com/en/locations/pk">Avis Car Guide</a></h3>
+         <p class="text-gray-400"> Best in our luxury car rentals.</p>
+          
+        
+          
+        
+        <!-- Repeat for other projects -->
+      </div>
+
+      <div class="relative  p-6 rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/Wedding-Planning-Website-Invites-Venues-Registry-More-05-27-2025_09_37_PM.png" alt="Project 1" class="w-full h-50 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold"><a href="https://www.zola.com/">Zola</a></h3>
+         <p class="text-gray-400">Wedding Plan Website.</p>
+          
+        
+          
+        
+        <!-- Repeat for other projects -->
+      </div>
+
+    
+
+      <div class="relative  p-6 rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/perly.png" alt="Project 1" class="w-full h-50 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold"><a href="https://preply.com/">Preply</a></h3>
+         <p class="text-gray-400">Learn faster
+with your best
+language tutor.</p>
+          
+        
+          
+        
+        <!-- Repeat for other projects -->
+      </div>
+
+      <div class="relative  p-6 rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/invadors.png" alt="Project 1" class="w-full h-50 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold"><a href="https://www.invaderpc.com/">Invaderpc</a></h3>
+         <p class="text-gray-400">Your ultimate destination for top-notch computer goods!.</p>
+          
+        
+          
+        
+        <!-- Repeat for other projects -->
+      </div>
+
+    
+      
+
+      
+    </div>
+  </section>
+
+<section id="contact" class="py-16 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-gray-800 text-center mb-6">Contact Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-4xl mx-auto">
+
+      <!-- Left Side: Email, Phone, Location -->
+      <div class="space-y-6">
+        <!-- Email -->
+        <div class="flex items-start space-x-4">
+          <svg class="w-6 h-6 text-blue-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M4 4h16v16H4z" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M22 6L12 13 2 6" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span class="text-gray-800 font-medium">
+            Email:
+            <a href="mailto:info.oryntecore@gmail.com" class="text-blue-600 hover:underline">
+            info.oryntecore@gmail.com
+            </a>
+          </span>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-start space-x-4">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a1 1 0 01-.293.707l-1 1A16.016 16.016 0 0015.293 18l1-1A1 1 0 0117 16h2a2 2 0 012 2v2a2 2 0 01-2 2h-1C10.611 22 2 13.389 2 3V2a2 2 0 011-1z" />
+          </svg>
+          <span class="text-gray-800 font-medium">Phone: <span class="text-gray-600">+92 331 9991156</span></span>
+        </div>
+
+        <!-- Location -->
+        <div class="flex items-start space-x-4">
+          <svg class="w-6 h-6 text-red-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5s-3 1.343-3 3 1.343 3 3 3zm0 0v10m0 0l6-6m-6 6l-6-6" />
+          </svg>
+          <span class="text-gray-800 font-medium">Location: <span class="text-gray-600">Karachi, Pakistan</span></span>
+        </div>
+      </div>
+
+      <!-- Right Side: Social Links -->
+      <div class="flex flex-col items-center space-y-6">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+923319991156" target="_blank" class="flex items-center space-x-4 hover:scale-105 transition">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" class="w-10 h-10">
+          <span class="text-green-600 font-semibold text-lg">Chat on WhatsApp</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/company/oryntecore/?viewAsMember=true" target="_blank" class="flex items-center space-x-4 hover:scale-105 transition">
+          <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" class="w-10 h-10">
+          <span class="text-blue-700 font-semibold text-lg">Connect on LinkedIn</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  
+  <!-- Add Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+  
+
+  <script>
+    // Hamburger menu toggle for mobile view
+    document.getElementById('hamburger').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-gray-900 text-white py-6">
+  <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Logo & About -->
+          <div>
+              <h2 class="text-xl font-semibold">Oryntecore</h2>
+              <p class="text-gray-400 mt-2">
+                  An innovative startup dedicated to delivering seamless, user-focused digital solutions that empower businesses through cutting-edge technology and creative design.
+              </p>
+          </div>
+          
+          <!-- Navigation Links -->
+          <div>
+              <h3 class="text-lg font-semibold">Quick Links</h3>
+              <ul class="mt-2 space-y-2">
+                  <li><a href="#about" class="text-gray-400 hover:text-white">Home</a></li>
+                  <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                  <li><a href="#team" class="text-gray-400 hover:text-white">Team</a></li>
+                  <li><a href="#projects" class="text-gray-400 hover:text-white">Projects</a></li>
+                  <li><a href="#contacts" class="text-gray-400 hover:text-white">Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+              <h3 class="text-lg font-semibold">Get in Touch</h3>
+              <p class="text-gray-400 mt-2">Email: info.oryntecore@gmail.com</p>
+              <p class="text-gray-400">Phone: +92 3319991156</p>
+          </div>
+      </div>
+
+      <!-- Bottom Line -->
+      <div class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-sm">
+          <b></b><span class="text-yellow-500">© 2024 oryntecore </span></b> All rights reserved.
+      </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  });
+</script>
+
+
+</body>
+
+</html>
