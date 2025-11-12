@@ -3007,7 +3007,7 @@
       };
       const serviceLabel = serviceMap[serviceKey] || serviceKey;
 
-      const waMessage = `New inquiry from *${name}*\n📧 ${email}\n🎯 Service: ${serviceLabel}\n📝 Details: ${projectDetails}`;
+      const waMessage = `New inquiry from *${name}*\nEmail: ${email}\nService: ${serviceLabel}\nDetails:\n${projectDetails}`;
       const waNumber = '923319991156'; // your WhatsApp number (without +)
       const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`;
 
