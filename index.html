@@ -1780,7 +1780,7 @@
 
     </div>
 
-</div>
+ </div>
 
             </div>
 
@@ -2520,7 +2520,7 @@
 
   </select>
 
-</div>
+ </div>
 
 
 
@@ -2989,6 +2989,31 @@
                     // Get form data
 
                     const formData = new FormData(this);
+                    
+                        // --- START: open WhatsApp with prefilled message ---
+      const name = formData.get('fullName') || '';
+      const email = formData.get('email') || '';
+      const serviceKey = formData.get('service') || '';
+      const projectDetails = formData.get('projectDetails') || '';
+
+      const serviceMap = {
+        'web-dev': 'Website Development',
+        'mern': 'MERN Stack Development',
+        'ecommerce': 'E-commerce Website',
+        'design': 'Graphic Design',
+        'ai': 'AI Development',
+        'marketing': 'Digital Marketing',
+        'other': 'Other Services'
+      };
+      const serviceLabel = serviceMap[serviceKey] || serviceKey;
+
+      const waMessage = `New inquiry from *${name}*\n📧 ${email}\n🎯 Service: ${serviceLabel}\n📝 Details: ${projectDetails}`;
+      const waNumber = '923319991156'; // your WhatsApp number (without +)
+      const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`;
+
+      window.open(waUrl, '_blank');
+      // --- END: open WhatsApp with prefilled message ---
+
 
                     const submitButton = this.querySelector('button[type="submit"]');
 
