@@ -473,16 +473,17 @@
    
 
     <!-- Zabir -->
-    <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-yellow-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
-      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Zabir Uddin</h3>
-      <div class="flex justify-center">
-        <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
-      </div>
-      <p class="text-gray-400 mt-2">Founder / WebApp Designer</p>
-      <div x-show="open" x-transition class="mt-4 text-gray-600">
-        <p>Manages frontend technologies and creative direction.</p>
-      </div>
-    </div>
+   <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-yellow-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+  <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Zabir Uddin</h3>
+  <div class="flex justify-center">
+    <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+  </div>
+  <p class="text-gray-400 mt-2">Founder / Product Designer / Frontend Engineer</p>
+  <div x-show="open" x-transition class="mt-4 text-gray-600">
+    <p class="mb-2 italic">Architecting systems with refined logic and quiet luxury aesthetics.</p>
+    <p>Specializing in React.js, Next.js, and Tailwind CSS to build scalable fintech and healthcare ecosystems.</p>
+  </div>
+</div>
   </div>
 
   <!-- ==================== CO-FOUNDERS ==================== -->
@@ -494,27 +495,27 @@
       <div class="flex justify-center">
         <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
       </div>
-      <p class="text-gray-400 mt-2">Co-founder / Front-end Developer</p>
+      <p class="text-gray-400 mt-2">Co-founder / Front-end enginner</p>
       <div x-show="open" x-transition class="mt-4 text-gray-600">
         <p>Manages frontend development and team coordination.</p>
       </div>
     </div>
 
-    <!-- Rasekh -->
-    <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
-      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Rasekh Ali</h3>
-      <div class="flex justify-center">
-        <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
-      </div>
-      <p class="text-gray-400 mt-2">Cyber Security Specialist / Offensive Security Consultant</p>
-      <div x-show="open" x-transition class="mt-4 text-gray-600">
-        <p>I secure systems by thinking like an attacker and building like an engineer.</p>
-      </div>
-    </div>
+    <!-- dua -->
+ <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+  <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Dua Mughal</h3>
+  <div class="flex justify-center">
+    <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+  </div>
+  <p class="text-gray-400 mt-2">Creative Directors</p>
+  <div x-show="open" x-transition class="mt-4 text-gray-600">
+    <p class="mb-2 italic">Provide creative direction and oversee the agency’s creative output.</p>
+  </div>
+</div>
   </div>
 
   <!-- ==================== TEAM MEMBERS ==================== -->
-  <h3 class="text-3xl font-bold mb-8 text-center text-gray-700">Team Members</h3>
+  <h3 class="text-3xl font-bold mb-8 text-center text-gray-700">Team Member</h3>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <!-- Maria -->
     <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
@@ -526,31 +527,43 @@
     </div>
 
     <!-- Tayyaba -->
-    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
-      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Tayyaba</h3>
-      <p class="text-gray-400 mt-2">UIUX Designer</p>
-      <div x-show="open" x-transition class="mt-4 text-gray-600">
-        <p>Enhances user experience through user-centric design strategies.</p>
-      </div>
-    </div>
+  <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+  <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Tayyaba</h3>
+  <div class="flex justify-center">
+    <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+  </div>
+  <p class="text-gray-400 mt-2">Software Engineer</p>
+  <div x-show="open" x-transition class="mt-4 text-gray-600">
+    <p class="mb-2 italic">Building robust solutions with a focus on clean, maintainable code.</p>
+    <p>Enhances user experience through user-centric design strategies and efficient software development.</p>
+  </div>
+</div>
 
     <!-- Bharti -->
-    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
-      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Bharti</h3>
-      <p class="text-gray-400 mt-2">Backend Dev</p>
-      <div x-show="open" x-transition class="mt-4 text-gray-600">
-        <p>Focuses on building robust backend system</p>
-      </div>
-    </div>
+ <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+  <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Bharti</h3>
+  <div class="flex justify-center">
+    <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+  </div>
+  <p class="text-gray-400 mt-2">Backend Developer</p>
+  <div x-show="open" x-transition class="mt-4 text-gray-600">
+    <p class="mb-2 italic">Architecting scalable server-side infrastructure.</p>
+    <p>Focuses on building robust backend systems, optimizing database performance, and ensuring seamless data integration.</p>
+  </div>
+</div>
 
     <!-- Anas -->
-    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
-      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Anas</h3>
-      <p class="text-gray-400 mt-2">Backend Developer</p>
-      <div x-show="open" x-transition class="mt-4 text-gray-600">
-        <ps>Focuses on building robust backend system and databases.</p>
-      </div>
-    </div>
+  <div x-data="{ open: false }" class="w-full sm:w-[500px] border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
+  <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Anas</h3>
+  <div class="flex justify-center">
+    <svg @click="open = !open" :class="{ 'rotate-180': open }" class="w-5 h-5 transition-transform transform cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+  </div>
+  <p class="text-gray-400 mt-2">Backend Developer</p>
+  <div x-show="open" x-transition class="mt-4 text-gray-600">
+    <p class="mb-2 italic">Engineering high-performance server-side architecture.</p>
+    <p>Focuses on building robust backend systems, architecting efficient databases, and optimizing API performance.</p>
+  </div>
+</div>
 
     <!-- Junaid -->
     <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
@@ -561,23 +574,7 @@
       </div>
     </div>
 
-    <!-- Aimal -->
-    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
-      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Aimal</h3>
-      <p class="text-gray-400 mt-2">Graphic Designer Intern </p>
-      <div x-show="open" x-transition class="mt-4 text-gray-600">
-        <p>Creative and detail-oriented, Aimal brings fresh ideas and innovative designs to our team. Passionate about visual storytelling.</p>
-      </div>
-    </div>
-
-    <!-- Kainat -->
-    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
-      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Kainat Fatima</h3>
-      <p class="text-gray-400 mt-2">Graphic Designer Intern</p>
-      <div x-show="open" x-transition class="mt-4 text-gray-600">
-        <p>Creates creative, clean, and professional brand and social media designs.</p>
-      </div>
-    </div>
+    
 
     <!-- Rasekh -->
     <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
@@ -588,14 +585,7 @@
       </div>
     </div>
 
-    <!-- Tania -->
-    <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
-      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Tania</h3>
-      <p class="text-gray-400 mt-2">Marketing Manager</p>
-      <div x-show="open" x-transition class="mt-4 text-gray-600">
-        <p>Leads digital marketing efforts and strengthens Oryntecore's online presence.</p>
-      </div>
-    </div>
+  
 
     <!-- Hira -->
     <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
@@ -614,13 +604,7 @@
       </div>
     </div>
 
-     <div x-data="{ open: false }" class="border-2 border-blue-400 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-center">
-      <h3 class="text-xl font-semibold mb-2 cursor-pointer" @click="open = !open">Muhammad Shah</h3>
-      <p class="text-gray-400 mt-2">App Developer</p>
-      <div x-show="open" x-transition class="mt-4 text-gray-600">
-        <p>Develops high-performance mobile applications with a focus on user experience and cross-platform functionality.</p>
-      </div>
-    </div>
+   
 
    
 
